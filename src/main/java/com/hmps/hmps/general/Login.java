@@ -25,6 +25,7 @@ public class Login {
             FXMLLoader fxmlLoader = new FXMLLoader(Start.class.getResource("main.fxml"));
             Scene scene = new Scene(fxmlLoader.load(), 1280, 700);
             Stage stage = new Stage();
+            scene.getStylesheets().add(getClass().getResource("CSS/button.css").toExternalForm());
             stage.setTitle("HPMS 1.0");
             stage.setScene(scene);
             loginBtn.getScene().getWindow().hide();

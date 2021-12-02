@@ -9,7 +9,7 @@
         <module name="HMPS" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
+    <bytecodeTargetLevel target="11">
       <module name="HMPS" target="11" />
     </bytecodeTargetLevel>
   </component>

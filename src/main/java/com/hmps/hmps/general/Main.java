@@ -12,6 +12,7 @@ import javafx.scene.layout.Pane;
 import javafx.util.Duration;
 
 import java.io.IOException;
+import java.util.Objects;
 
 public class Main {
 
@@ -29,14 +30,14 @@ public class Main {
         }
         if (!found) {
 
-            Pane newLoadedPane = FXMLLoader.load(Start.class.getResource("patientDetail.fxml"));
+            Pane newLoadedPane = FXMLLoader.load(Objects.requireNonNull(Start.class.getResource("patientDetail.fxml")));
             newLoadedPane.setId("7588");
             mainPane.getChildren().add(newLoadedPane);
             //Create new TimeLine animation
             Timeline timeline = new Timeline();
             //Animate Y property
             KeyValue kv = new KeyValue(newLoadedPane.translateYProperty(), 0, Interpolator.EASE_IN);
-            KeyFrame kf = new KeyFrame(Duration.millis(2000), kv);
+            KeyFrame kf = new KeyFrame(Duration.millis(1000), kv);
             timeline.getKeyFrames().add(kf);
             //After completing animation, remove first scene
             timeline.setOnFinished(t -> {
@@ -47,5 +48,7 @@ public class Main {
 
         }
     }
+
+
 
 }

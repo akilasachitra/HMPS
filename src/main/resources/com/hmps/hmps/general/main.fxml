@@ -13,41 +13,41 @@
    <children>
       <ToolBar layoutY="27.0" orientation="VERTICAL" prefHeight="668.0" prefWidth="107.0" style="-fx-background-color: #f6f6f7;">
         <items>
-          <Button fx:id="patientButton" mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Patient Handling" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+          <Button fx:id="patientButton" ellipsisString="" mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-image: url(&quot;/mages/patt.jpg&quot;);" text="Patient" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font></Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-color: #95308d;" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button mnemonicParsing="false" onMouseClicked="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="14.0" />
                </font>

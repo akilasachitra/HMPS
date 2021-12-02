@@ -9,6 +9,8 @@
     <version>1.0-SNAPSHOT</version>
     <name>HMPS</name>
 
+
+
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -98,7 +100,7 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.hmps.hmps/com.hmps.hmps.HelloApplication</mainClass>
+                            <mainClass>com.hmps.hmps/com.hmps.hmps.general.Start</mainClass>
                         </configuration>
                     </execution>
                 </executions>
