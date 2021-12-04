@@ -119,7 +119,7 @@
                         <configuration>
                             <transformers>
                                 <transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-                                    <mainClass>com.hmps.hmps.general.Start</mainClass>
+                                    <mainClass>com.hmps.hmps/com.hmps.hmps.general.Start</mainClass>
                                 </transformer>
                             </transformers>
                         </configuration>
