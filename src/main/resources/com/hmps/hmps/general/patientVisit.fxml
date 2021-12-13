@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.Cursor?>
+<?import javafx.scene.Group?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.CheckBox?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.DatePicker?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.RadioButton?>
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Tab?>
@@ -20,6 +22,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
+<?import javafx.scene.paint.Color?>
 <?import javafx.scene.text.Font?>
 
 
@@ -28,18 +31,22 @@
       <Pane layoutX="25.0" layoutY="14.0" prefHeight="674.0" prefWidth="1166.0">
          <children>
             <Label layoutX="563.0" layoutY="61.0" prefHeight="17.0" prefWidth="505.0" style="-fx-background-color: gray;" />
-            <Button layoutX="294.0" layoutY="72.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Search" />
-            <RadioButton layoutX="13.0" layoutY="17.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="152.0" text="Search by Patient Code" />
-            <RadioButton layoutX="12.0" layoutY="46.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
-            <TextField layoutX="173.0" layoutY="42.0" prefHeight="26.0" prefWidth="110.0" />
-            <RadioButton layoutX="12.0" layoutY="75.0" mnemonicParsing="false" text="Search by Social Security" />
-            <TextField layoutX="173.0" layoutY="72.0" prefHeight="26.0" prefWidth="110.0" />
+            <Button layoutX="294.0" layoutY="73.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Search" />
+            <Group layoutX="12.0" layoutY="14.0">
+               <children>
+                  <RadioButton layoutX="1.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="152.0" selected="true" text="Search by Patient Code" />
+                  <RadioButton layoutY="31.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
+                  <RadioButton layoutY="62.0" mnemonicParsing="false" text="Search by Social Security" />
+               </children>
+            </Group>
+            <TextField disable="true" layoutX="173.0" layoutY="42.0" prefHeight="26.0" prefWidth="110.0" />
+            <TextField disable="true" layoutX="173.0" layoutY="73.0" prefHeight="26.0" prefWidth="110.0" />
             <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="26.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@CSS/Images/user.png" />
                </image>
             </ImageView>
-            <Label layoutX="176.0" layoutY="120.0" prefHeight="27.0" prefWidth="237.0" text="Name">
+            <Label layoutX="176.0" layoutY="113.0" prefHeight="27.0" prefWidth="237.0" text="Jhone H Silva">
                <font>
                   <Font name="System Bold" size="18.0" />
                </font>
@@ -70,19 +77,19 @@
                               <TextField layoutX="210.0" layoutY="27.0" prefHeight="26.0" prefWidth="51.0" />
                               <ComboBox layoutX="270.0" layoutY="27.0" prefHeight="26.0" prefWidth="73.0" promptText="AM" />
                               <Label layoutX="8.0" layoutY="71.0" prefHeight="18.0" prefWidth="88.0" text="Transpotation " />
-                              <ComboBox layoutX="101.0" layoutY="67.0" prefHeight="26.0" prefWidth="161.0" />
+                              <ComboBox layoutX="101.0" layoutY="67.0" prefHeight="26.0" prefWidth="161.0" promptText="Ambulant" />
                               <Label layoutX="8.0" layoutY="111.0" prefHeight="18.0" prefWidth="88.0" text="Intake Place" />
-                              <ComboBox layoutX="101.0" layoutY="107.0" prefHeight="26.0" prefWidth="161.0" />
-                              <TextArea layoutX="99.0" layoutY="183.0" prefHeight="65.0" prefWidth="258.0" />
+                              <ComboBox layoutX="101.0" layoutY="107.0" prefHeight="26.0" prefWidth="161.0" promptText="In House" />
+                              <TextArea layoutX="99.0" layoutY="185.0" prefHeight="65.0" prefWidth="258.0" />
                               <Label layoutX="395.0" layoutY="31.0" prefHeight="18.0" prefWidth="88.0" text="Reffered by " />
-                              <TextArea layoutX="97.0" layoutY="262.0" prefHeight="65.0" prefWidth="258.0" />
-                              <Label layoutX="4.0" layoutY="263.0" prefHeight="18.0" prefWidth="88.0" text="Issue / problem" />
+                              <TextArea layoutX="97.0" layoutY="264.0" prefHeight="65.0" prefWidth="258.0" />
+                              <Label layoutX="8.0" layoutY="263.0" prefHeight="18.0" prefWidth="88.0" text="Issue / problem" />
                               <TextField layoutX="491.0" layoutY="27.0" prefHeight="26.0" prefWidth="203.0" />
                               <Label layoutX="395.0" layoutY="71.0" prefHeight="18.0" prefWidth="95.0" text="Reffering Doctor " />
-                              <ComboBox layoutX="491.0" layoutY="67.0" prefHeight="26.0" prefWidth="203.0" />
-                              <Label layoutX="6.0" layoutY="181.0" prefHeight="18.0" prefWidth="88.0" text="Reason" />
-                              <Label layoutX="6.0" layoutY="148.0" prefHeight="18.0" prefWidth="88.0" text="Intake Type" />
-                              <ComboBox layoutX="99.0" layoutY="144.0" prefHeight="26.0" prefWidth="161.0" />
+                              <ComboBox layoutX="491.0" layoutY="67.0" prefHeight="26.0" prefWidth="203.0" promptText="Dr. Steeve Rickson" />
+                              <Label layoutX="8.0" layoutY="184.0" prefHeight="18.0" prefWidth="88.0" text="Reason" />
+                              <Label layoutX="8.0" layoutY="148.0" prefHeight="18.0" prefWidth="88.0" text="Intake Type" />
+                              <ComboBox layoutX="99.0" layoutY="144.0" prefHeight="26.0" prefWidth="161.0" promptText="Mug Visit" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -173,10 +180,10 @@
                               <Label layoutX="14.0" layoutY="72.0" prefHeight="18.0" prefWidth="60.0" text="Diagnosis" />
                               <TextArea layoutX="86.0" layoutY="72.0" prefHeight="214.0" prefWidth="650.0" />
                               <Label layoutX="13.0" layoutY="26.0" prefHeight="27.0" prefWidth="121.0" text="Doctor" />
-                              <ComboBox layoutX="86.0" layoutY="27.0" prefHeight="26.0" prefWidth="209.0" />
+                              <ComboBox layoutX="86.0" layoutY="27.0" prefHeight="26.0" prefWidth="209.0" promptText="Dr. Steeve Rickson" />
                               <Label layoutX="13.0" layoutY="302.0" prefHeight="27.0" prefWidth="121.0" text="Codification" />
-                              <ComboBox layoutX="86.0" layoutY="303.0" prefHeight="26.0" prefWidth="95.0" />
-                              <TextField layoutX="190.0" layoutY="303.0" prefHeight="26.0" prefWidth="110.0" />
+                              <ComboBox layoutX="86.0" layoutY="303.0" prefHeight="26.0" prefWidth="95.0" promptText="Blue" />
+                              <TextField layoutX="190.0" layoutY="303.0" prefHeight="26.0" prefWidth="110.0" text="Cardiac Arrest" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -252,47 +259,176 @@
                   </Tab>
                   <Tab text="Current Medication">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox layoutX="14.0" layoutY="39.0" mnemonicParsing="false" text="Central BR" />
+                              <CheckBox layoutX="14.0" layoutY="100.0" mnemonicParsing="false" text="Central BL" />
+                              <CheckBox layoutX="15.0" layoutY="161.0" mnemonicParsing="false" text="Central W" />
+                              <CheckBox layoutX="15.0" layoutY="228.0" mnemonicParsing="false" text="Thoraxdrain Right" />
+                              <CheckBox layoutX="15.0" layoutY="295.0" mnemonicParsing="false" text="Thoraxdrain Left" />
+                              <TextArea layoutX="144.0" layoutY="30.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="144.0" layoutY="89.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="144.0" layoutY="150.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="144.0" layoutY="217.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="144.0" layoutY="284.0" prefHeight="34.0" prefWidth="290.0" />
+                              <CheckBox layoutX="462.0" layoutY="41.0" mnemonicParsing="false" text="Gastric Tube" />
+                              <CheckBox layoutX="462.0" layoutY="102.0" mnemonicParsing="false" text="Perif Right" />
+                              <CheckBox layoutX="463.0" layoutY="163.0" mnemonicParsing="false" text="Perif Left" />
+                              <CheckBox layoutX="463.0" layoutY="230.0" mnemonicParsing="false" text="Bladder Catherter" />
+                              <CheckBox layoutX="463.0" layoutY="297.0" mnemonicParsing="false" text="Bone" />
+                              <TextArea layoutX="592.0" layoutY="32.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="592.0" layoutY="91.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="592.0" layoutY="152.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="592.0" layoutY="219.0" prefHeight="34.0" prefWidth="290.0" />
+                              <TextArea layoutX="592.0" layoutY="286.0" prefHeight="34.0" prefWidth="290.0" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Medical Results">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="35.0" prefHeight="18.0" prefWidth="60.0" text="Results" />
+                              <TextArea layoutX="89.0" layoutY="35.0" prefHeight="97.0" prefWidth="614.0" />
+                              <TableView layoutX="89.0" layoutY="184.0" prefHeight="150.0" prefWidth="622.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Date" />
+                                  <TableColumn prefWidth="544.0000762939453" text="Details" />
+                                </columns>
+                              </TableView>
+                              <Button layoutX="89.0" layoutY="145.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Browse" />
+                              <Button layoutX="194.0" layoutY="145.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Add" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Bed booking">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="22.0" layoutY="22.0" prefHeight="27.0" prefWidth="95.0" text="Select Ward">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <Label layoutX="347.0" layoutY="22.0" prefHeight="27.0" prefWidth="88.0" text="Select Bed">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ListView layoutX="144.0" layoutY="22.0" prefHeight="304.0" prefWidth="154.0" />
+                              <ListView layoutX="448.0" layoutY="22.0" prefHeight="304.0" prefWidth="154.0" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="To-do">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextField layoutX="14.0" layoutY="23.0" prefHeight="26.0" prefWidth="73.0" />
+                              <TextField layoutX="98.0" layoutY="23.0" prefHeight="26.0" prefWidth="622.0" />
+                              <Button layoutX="733.0" layoutY="23.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Add" />
+                              <TableView layoutX="14.0" layoutY="68.0" prefHeight="274.0" prefWidth="816.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Task" />
+                                  <TableColumn prefWidth="733.6000518798828" text="Details" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Notes">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea layoutX="79.0" layoutY="32.0" prefHeight="294.0" prefWidth="799.0" />
+                              <Label layoutX="14.0" layoutY="32.0" prefHeight="18.0" prefWidth="60.0" text="Notes " />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Contact">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="30.0" prefHeight="18.0" prefWidth="110.0" text="Contact First Name" />
+                              <Label layoutX="14.0" layoutY="69.0" prefHeight="18.0" prefWidth="110.0" text="Contact Last Name" />
+                              <TextField layoutX="128.0" layoutY="141.0" prefHeight="26.0" prefWidth="220.0" />
+                              <TextField layoutX="128.0" layoutY="181.0" prefHeight="26.0" prefWidth="220.0" />
+                              <Label layoutX="14.0" layoutY="144.0" prefHeight="18.0" prefWidth="70.0" text="Address 1" />
+                              <Label layoutX="14.0" layoutY="268.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 1" />
+                              <Label layoutX="14.0" layoutY="309.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 2" />
+                              <TextField layoutX="128.0" layoutY="223.0" prefHeight="26.0" prefWidth="150.0" />
+                              <TextField layoutX="128.0" layoutY="305.0" prefHeight="26.0" prefWidth="150.0" />
+                              <TextField layoutX="128.0" layoutY="26.0" prefHeight="26.0" prefWidth="220.0" />
+                              <Label layoutX="14.0" layoutY="184.0" prefHeight="18.0" prefWidth="58.0" text="Address 2" />
+                              <TextField layoutX="128.0" layoutY="65.0" prefHeight="26.0" prefWidth="220.0" />
+                              <Label layoutX="14.0" layoutY="227.0" prefHeight="18.0" prefWidth="92.0" text="E-mail " />
+                              <TextField layoutX="128.0" layoutY="264.0" prefHeight="26.0" prefWidth="150.0" />
+                              <Label layoutX="14.0" layoutY="107.0" prefHeight="18.0" prefWidth="70.0" text="Relationship" />
+                              <ComboBox layoutX="126.0" layoutY="103.0" prefHeight="26.0" prefWidth="102.0" promptText="Spouse" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Belongins">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="23.0" layoutY="28.0" prefHeight="27.0" prefWidth="73.0" text="Location">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <ComboBox layoutX="96.0" layoutY="28.0" prefHeight="25.0" prefWidth="152.0" promptText="Main Store " />
+                              <Label layoutX="265.0" layoutY="28.0" prefHeight="27.0" prefWidth="73.0" text="Item">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                              </Label>
+                              <TextField layoutX="314.0" layoutY="27.0" prefHeight="26.0" prefWidth="174.0" />
+                              <Button layoutX="499.0" layoutY="26.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Add" />
+                              <TableView layoutX="96.0" layoutY="77.0" prefHeight="263.0" prefWidth="490.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Location" />
+                                  <TableColumn prefWidth="414.40001525878904" text="Item" />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Insurance">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="10.0" layoutY="40.0" prefHeight="18.0" prefWidth="110.0" text="Insurance Agent" />
+                              <TextField layoutX="120.0" layoutY="36.0" prefHeight="26.0" prefWidth="220.0" />
+                              <Label layoutX="10.0" layoutY="76.0" prefHeight="18.0" prefWidth="70.0" text="Address 1" />
+                              <Label layoutX="10.0" layoutY="154.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 1" />
+                              <Label layoutX="10.0" layoutY="192.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 2" />
+                              <TextField layoutX="120.0" layoutY="188.0" prefHeight="26.0" prefWidth="110.0" />
+                              <TextField layoutX="120.0" layoutY="150.0" prefHeight="26.0" prefWidth="110.0" />
+                              <TextField layoutX="120.0" layoutY="72.0" prefHeight="26.0" prefWidth="220.0" />
+                              <Label layoutX="10.0" layoutY="112.0" prefHeight="18.0" prefWidth="58.0" text="Address 2" />
+                              <TextField layoutX="120.0" layoutY="108.0" prefHeight="26.0" prefWidth="220.0" />
+                              <Label layoutX="10.0" layoutY="232.0" prefHeight="18.0" prefWidth="92.0" text="E-mail " />
+                              <TextField layoutX="120.0" layoutY="228.0" prefHeight="26.0" prefWidth="215.0" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Other">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea layoutX="95.0" layoutY="30.0" prefHeight="294.0" prefWidth="799.0" />
+                              <Label layoutX="10.0" layoutY="30.0" prefHeight="18.0" prefWidth="88.0" text="Other Details" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
               </tabs>
@@ -303,10 +439,22 @@
                </font>
             </Label>
             <DatePicker layoutX="274.0" layoutY="176.0" prefHeight="25.0" prefWidth="110.0" />
-            <Label layoutX="275.0" layoutY="206.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
-            <Label layoutX="275.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
+            <Label alignment="CENTER" layoutX="275.0" layoutY="206.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="F" textAlignment="CENTER">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" layoutX="275.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="28">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
             <Label layoutX="494.0" layoutY="122.0" prefHeight="25.0" prefWidth="110.0" />
-            <Label layoutX="477.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
+            <Label layoutX="477.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="O+">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </Label>
             <Label layoutX="397.0" layoutY="204.0" prefHeight="27.0" prefWidth="79.0" text="Urgency">
                <font>
                   <Font size="14.0" />
@@ -354,13 +502,13 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="145.0" prefWidth="150.0" />
+            <ComboBox layoutX="742.0" layoutY="145.0" prefWidth="150.0" promptText="Cardio" />
             <Label layoutX="630.0" layoutY="174.0" prefHeight="27.0" prefWidth="121.0" text="Reffering Doctor">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="176.0" prefWidth="150.0" />
+            <ComboBox layoutX="742.0" layoutY="176.0" prefWidth="150.0" promptText="Dr. Steeve Rickson" />
             <Label layoutX="632.0" layoutY="206.0" prefHeight="27.0" prefWidth="79.0" text="Pain Scale">
                <font>
                   <Font size="14.0" />
@@ -371,67 +519,80 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="209.0" prefHeight="25.0" prefWidth="51.0" />
+            <ComboBox layoutX="742.0" layoutY="209.0" prefHeight="25.0" prefWidth="73.0" promptText="Fair" />
             <Label layoutX="920.0" layoutY="176.0" prefHeight="27.0" prefWidth="73.0" text="Ward">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" />
+            <ComboBox layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" promptText="Xpolinate" />
             <Label layoutX="920.0" layoutY="208.0" prefHeight="27.0" prefWidth="60.0" text="Bed">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" />
+            <ComboBox layoutX="993.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" promptText="A1022" />
             <Label alignment="CENTER" layoutX="778.0" layoutY="12.0" prefHeight="17.0" prefWidth="110.0" text="VISIT MAP">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <ToggleButton layoutX="562.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
+            <ToggleButton layoutX="562.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: white;" text="R">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <effect>
-                  <DropShadow />
+                  <DropShadow height="44.4" radius="22.2825" width="46.73">
+                     <color>
+                        <Color red="1.0" green="0.16296295821666718" blue="0.1908641904592514" />
+                     </color>
+                  </DropShadow>
                </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
             </ToggleButton>
             <Label layoutX="564.0" layoutY="87.0" text="Registered" />
-            <ToggleButton layoutX="652.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
+            <ToggleButton layoutX="652.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: orange;" text="T">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <effect>
-                  <DropShadow />
+                  <DropShadow height="42.06" radius="20.53" width="42.06">
+                     <color>
+                        <Color red="0.25925925374031067" green="0.3333333432674408" blue="1.0" />
+                     </color>
+                  </DropShadow>
                </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
             </ToggleButton>
             <Label alignment="CENTER" layoutX="666.0" layoutY="87.0" text="Triage" />
-            <ToggleButton layoutX="740.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
+            <ToggleButton layoutX="740.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="BT">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
                <effect>
-                  <DropShadow />
+                  <DropShadow height="42.06" radius="21.1125" width="44.39">
+                     <color>
+                        <Color green="0.9578947424888611" blue="0.43105262517929077" />
+                     </color>
+                  </DropShadow>
                </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
             </ToggleButton>
             <Label alignment="CENTER" layoutX="734.0" layoutY="87.0" text="Being Treated" textAlignment="CENTER" />
-            <ToggleButton layoutX="832.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
-               <cursor>
-                  <Cursor fx:constant="HAND" />
-               </cursor>
-               <effect>
-                  <DropShadow />
-               </effect>
-            </ToggleButton>
             <Label alignment="CENTER" layoutX="833.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Medical Treatment" textAlignment="CENTER" wrapText="true" />
-            <ToggleButton layoutX="924.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
+            <ToggleButton layoutX="924.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: green;" text="NT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-               <effect>
-                  <DropShadow />
-               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
             </ToggleButton>
             <Label alignment="CENTER" layoutX="925.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Nursing Treament" textAlignment="CENTER" wrapText="true" />
             <ToggleButton layoutX="1011.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: RED;" text="OUT" textFill="WHITE">
@@ -441,9 +602,6 @@
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
-               <effect>
-                  <DropShadow />
-               </effect>
             </ToggleButton>
             <Label alignment="CENTER" layoutX="1003.0" layoutY="87.0" prefHeight="25.0" prefWidth="73.0" text="Mark as Out" textAlignment="CENTER" />
             <Label layoutX="920.0" layoutY="142.0" prefHeight="27.0" prefWidth="73.0" text="Mobility">
@@ -451,7 +609,23 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="994.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" />
+            <ComboBox layoutX="994.0" layoutY="145.0" prefHeight="25.0" prefWidth="150.0" promptText="Wheel Chair" />
+            <TextField layoutX="173.0" layoutY="11.0" prefHeight="26.0" prefWidth="110.0" />
+            <ToggleButton layoutX="833.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: blue;" text="MT" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <DropShadow height="42.06" radius="20.53" width="42.06">
+                     <color>
+                        <Color red="0.9166666865348816" green="1.0" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font>
+            </ToggleButton>
          </children>
       </Pane>
    </children>
