@@ -10,6 +10,9 @@
 <?import javafx.scene.control.Slider?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.control.ToggleButton?>
 <?import javafx.scene.effect.DropShadow?>
@@ -31,7 +34,6 @@
             <TextField layoutX="173.0" layoutY="42.0" prefHeight="26.0" prefWidth="110.0" />
             <RadioButton layoutX="12.0" layoutY="75.0" mnemonicParsing="false" text="Search by Social Security" />
             <TextField layoutX="173.0" layoutY="72.0" prefHeight="26.0" prefWidth="110.0" />
-            <TextField layoutX="172.0" layoutY="12.0" prefHeight="26.0" prefWidth="110.0" />
             <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="26.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@CSS/Images/user.png" />
@@ -61,27 +63,191 @@
               <tabs>
                 <Tab text="Admission">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="629.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="629.0">
+                           <children>
+                              <Label layoutX="8.0" layoutY="31.0" prefHeight="18.0" prefWidth="73.0" text="Arrival Time" />
+                              <DatePicker layoutX="101.0" layoutY="27.0" prefHeight="26.0" prefWidth="95.0" />
+                              <TextField layoutX="210.0" layoutY="27.0" prefHeight="26.0" prefWidth="51.0" />
+                              <ComboBox layoutX="270.0" layoutY="27.0" prefHeight="26.0" prefWidth="73.0" promptText="AM" />
+                              <Label layoutX="8.0" layoutY="71.0" prefHeight="18.0" prefWidth="88.0" text="Transpotation " />
+                              <ComboBox layoutX="101.0" layoutY="67.0" prefHeight="26.0" prefWidth="161.0" />
+                              <Label layoutX="8.0" layoutY="111.0" prefHeight="18.0" prefWidth="88.0" text="Intake Place" />
+                              <ComboBox layoutX="101.0" layoutY="107.0" prefHeight="26.0" prefWidth="161.0" />
+                              <TextArea layoutX="99.0" layoutY="183.0" prefHeight="65.0" prefWidth="258.0" />
+                              <Label layoutX="395.0" layoutY="31.0" prefHeight="18.0" prefWidth="88.0" text="Reffered by " />
+                              <TextArea layoutX="97.0" layoutY="262.0" prefHeight="65.0" prefWidth="258.0" />
+                              <Label layoutX="4.0" layoutY="263.0" prefHeight="18.0" prefWidth="88.0" text="Issue / problem" />
+                              <TextField layoutX="491.0" layoutY="27.0" prefHeight="26.0" prefWidth="203.0" />
+                              <Label layoutX="395.0" layoutY="71.0" prefHeight="18.0" prefWidth="95.0" text="Reffering Doctor " />
+                              <ComboBox layoutX="491.0" layoutY="67.0" prefHeight="26.0" prefWidth="203.0" />
+                              <Label layoutX="6.0" layoutY="181.0" prefHeight="18.0" prefWidth="88.0" text="Reason" />
+                              <Label layoutX="6.0" layoutY="148.0" prefHeight="18.0" prefWidth="88.0" text="Intake Type" />
+                              <ComboBox layoutX="99.0" layoutY="144.0" prefHeight="26.0" prefWidth="161.0" />
+                           </children>
+                        </AnchorPane>
                   </content>
                 </Tab>
                 <Tab text="History">
                   <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <TextArea layoutX="102.0" layoutY="243.0" prefHeight="86.0" prefWidth="586.0" />
+                              <Label layoutX="10.0" layoutY="243.0" prefHeight="18.0" prefWidth="88.0" text="Extra Info" />
+                              <Label layoutX="8.0" layoutY="31.0" prefHeight="18.0" prefWidth="88.0" text="Previous Visits " />
+                              <TableView layoutX="102.0" layoutY="31.0" prefHeight="195.0" prefWidth="582.0">
+                                <columns>
+                                  <TableColumn prefWidth="75.0" text="Date In" />
+                                  <TableColumn prefWidth="117.60005187988281" text="Problem" />
+                                    <TableColumn prefWidth="85.5999755859375" text="Doctor" />
+                                    <TableColumn prefWidth="234.4000244140625" text="Pathology" />
+                                    <TableColumn prefWidth="75.0" text="Out " />
+                                </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
                   </content>
                 </Tab>
                   <Tab text="Vitals">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="10.0" layoutY="30.0" prefHeight="18.0" prefWidth="73.0" text="Time" />
+                              <TextField layoutX="103.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
+                              <ComboBox layoutX="165.0" layoutY="26.0" prefHeight="26.0" prefWidth="73.0" promptText="AM" />
+                              <Label layoutX="10.0" layoutY="67.0" prefHeight="18.0" prefWidth="88.0" text="Blood pressure" />
+                              <TextField layoutX="103.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="10.0" layoutY="106.0" prefHeight="18.0" prefWidth="88.0" text="Pulse" />
+                              <TextField layoutX="103.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="11.0" layoutY="146.0" prefHeight="18.0" prefWidth="95.0" text="Respiration rate" />
+                              <TextField layoutX="104.0" layoutY="142.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="11.0" layoutY="183.0" prefHeight="18.0" prefWidth="88.0" text="Resp condition" />
+                              <TextField layoutX="104.0" layoutY="179.0" prefHeight="26.0" prefWidth="134.0" />
+                              <Label layoutX="11.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Pulse" />
+                              <TextField layoutX="104.0" layoutY="216.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="11.0" layoutY="258.0" prefHeight="18.0" prefWidth="88.0" text="Saturated O2" />
+                              <TextField layoutX="104.0" layoutY="254.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="11.0" layoutY="294.0" prefHeight="18.0" prefWidth="88.0" text="Oxygen L/Min" />
+                              <TextField layoutX="104.0" layoutY="290.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="264.0" layoutY="30.0" prefHeight="18.0" prefWidth="88.0" text="Nebulisation /hr" />
+                              <TextField layoutX="357.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="264.0" layoutY="67.0" prefHeight="18.0" prefWidth="88.0" text="Temp c" />
+                              <TextField layoutX="357.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="264.0" layoutY="106.0" prefHeight="18.0" prefWidth="88.0" text="Calpillary refill" />
+                              <TextField layoutX="357.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="265.0" layoutY="146.0" prefHeight="18.0" prefWidth="95.0" text="Skin Color" />
+                              <Label layoutX="265.0" layoutY="183.0" prefHeight="18.0" prefWidth="88.0" text="Resp condition" />
+                              <TextField layoutX="358.0" layoutY="179.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="265.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Pulse" />
+                              <TextField layoutX="358.0" layoutY="216.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="265.0" layoutY="258.0" prefHeight="18.0" prefWidth="88.0" text="Saturated O2" />
+                              <TextField layoutX="358.0" layoutY="254.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="265.0" layoutY="292.0" prefHeight="18.0" prefWidth="88.0" text="Oxygen L/Min" />
+                              <TextField layoutX="358.0" layoutY="288.0" prefHeight="26.0" prefWidth="51.0" />
+                              <ComboBox layoutX="358.0" layoutY="139.0" prefHeight="26.0" prefWidth="110.0" promptText="Fair" />
+                              <Label layoutX="505.0" layoutY="30.0" prefHeight="18.0" prefWidth="88.0" text="Blood sugar" />
+                              <TextField layoutX="598.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="505.0" layoutY="67.0" prefHeight="18.0" prefWidth="88.0" text="Urine floor" />
+                              <TextField layoutX="598.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="505.0" layoutY="106.0" prefHeight="18.0" prefWidth="88.0" text="Weight" />
+                              <TextField layoutX="598.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="506.0" layoutY="146.0" prefHeight="18.0" prefWidth="95.0" text="Eye opening" />
+                              <Label layoutX="506.0" layoutY="183.0" prefHeight="18.0" prefWidth="88.0" text="Verbal response" />
+                              <TextField layoutX="599.0" layoutY="179.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="506.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Motor funtion" />
+                              <TextField layoutX="599.0" layoutY="216.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="506.0" layoutY="258.0" prefHeight="18.0" prefWidth="88.0" text="Pupils" />
+                              <TextField layoutX="599.0" layoutY="254.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="506.0" layoutY="292.0" prefHeight="18.0" prefWidth="88.0" text="Pupil reaction" />
+                              <TextField layoutX="599.0" layoutY="288.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="728.0" layoutY="30.0" prefHeight="18.0" prefWidth="60.0" text="Remark" />
+                              <TextArea layoutX="797.0" layoutY="24.0" prefHeight="200.0" prefWidth="281.0" />
+                              <TextField layoutX="598.0" layoutY="139.0" prefHeight="26.0" prefWidth="121.0" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Diagnosis">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="72.0" prefHeight="18.0" prefWidth="60.0" text="Diagnosis" />
+                              <TextArea layoutX="86.0" layoutY="72.0" prefHeight="214.0" prefWidth="650.0" />
+                              <Label layoutX="13.0" layoutY="26.0" prefHeight="27.0" prefWidth="121.0" text="Doctor" />
+                              <ComboBox layoutX="86.0" layoutY="27.0" prefHeight="26.0" prefWidth="209.0" />
+                              <Label layoutX="13.0" layoutY="302.0" prefHeight="27.0" prefWidth="121.0" text="Codification" />
+                              <ComboBox layoutX="86.0" layoutY="303.0" prefHeight="26.0" prefWidth="95.0" />
+                              <TextField layoutX="190.0" layoutY="303.0" prefHeight="26.0" prefWidth="110.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab text="Examination">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <Label layoutX="14.0" layoutY="20.0" prefHeight="18.0" prefWidth="60.0" text="Emergency" />
+                              <TextArea layoutX="87.0" layoutY="22.0" prefHeight="70.0" prefWidth="605.0" />
+                              <Label layoutX="14.0" layoutY="102.0" prefHeight="18.0" prefWidth="60.0" text="Cardio" />
+                              <TextArea layoutX="87.0" layoutY="102.0" prefHeight="70.0" prefWidth="605.0" />
+                              <Label layoutX="13.0" layoutY="182.0" prefHeight="18.0" prefWidth="60.0" text="Endoscopy" />
+                              <TextArea layoutX="86.0" layoutY="182.0" prefHeight="70.0" prefWidth="606.0" />
+                              <Label layoutX="13.0" layoutY="265.0" prefHeight="18.0" prefWidth="73.0" text="Colonoscopy" />
+                              <TextArea layoutX="86.0" layoutY="265.0" prefHeight="70.0" prefWidth="605.0" />
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Anti coagulant">
                     <content>
-                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                           <children>
+                              <CheckBox layoutX="11.0" layoutY="9.0" mnemonicParsing="false" text="Patient does not take">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </CheckBox>
+                              <CheckBox layoutX="11.0" layoutY="67.0" mnemonicParsing="false" text="Aggrenox" />
+                              <CheckBox layoutX="11.0" layoutY="104.0" mnemonicParsing="false" text="Angiox" />
+                              <CheckBox layoutX="11.0" layoutY="139.0" mnemonicParsing="false" text="Arixtra" />
+                              <CheckBox layoutX="11.0" layoutY="175.0" mnemonicParsing="false" text="Asaflow" />
+                              <CheckBox layoutX="11.0" layoutY="211.0" mnemonicParsing="false" text="Aspegic" />
+                              <CheckBox layoutX="11.0" layoutY="282.0" mnemonicParsing="false" text="Brilique" />
+                              <CheckBox layoutX="11.0" layoutY="247.0" mnemonicParsing="false" text="Aspirine" />
+                              <CheckBox layoutX="11.0" layoutY="319.0" mnemonicParsing="false" text="Clexane" />
+                              <CheckBox layoutX="127.0" layoutY="67.0" mnemonicParsing="false" text="Efient" />
+                              <CheckBox layoutX="127.0" layoutY="104.0" mnemonicParsing="false" text="Eliquis" />
+                              <CheckBox layoutX="127.0" layoutY="139.0" mnemonicParsing="false" text="Flolan" />
+                              <CheckBox layoutX="126.0" layoutY="175.0" mnemonicParsing="false" text="Fraxiparine" />
+                              <CheckBox layoutX="126.0" layoutY="211.0" mnemonicParsing="false" text="Fraxodi" />
+                              <CheckBox layoutX="126.0" layoutY="282.0" mnemonicParsing="false" text="Marcoumar" />
+                              <CheckBox layoutX="126.0" layoutY="247.0" mnemonicParsing="false" text="Innohep" />
+                              <CheckBox layoutX="126.0" layoutY="319.0" mnemonicParsing="false" text="Marevan" />
+                              <CheckBox layoutX="255.0" layoutY="67.0" mnemonicParsing="false" text="Orgaran" />
+                              <CheckBox layoutX="255.0" layoutY="104.0" mnemonicParsing="false" text="Persantine" />
+                              <CheckBox layoutX="255.0" layoutY="139.0" mnemonicParsing="false" text="Plavix" />
+                              <CheckBox layoutX="254.0" layoutY="175.0" mnemonicParsing="false" text="Praxada" />
+                              <CheckBox layoutX="254.0" layoutY="211.0" mnemonicParsing="false" text="Sintrom" />
+                              <CheckBox layoutX="254.0" layoutY="282.0" mnemonicParsing="false" text="Xarelto" />
+                              <CheckBox layoutX="254.0" layoutY="247.0" mnemonicParsing="false" text="Ticlid" />
+                              <TextField layoutX="427.0" layoutY="69.0" prefHeight="26.0" prefWidth="110.0" />
+                              <CheckBox layoutX="389.0" layoutY="73.0" mnemonicParsing="false" />
+                              <TextField layoutX="427.0" layoutY="105.0" prefHeight="26.0" prefWidth="110.0" />
+                              <CheckBox layoutX="389.0" layoutY="109.0" mnemonicParsing="false" />
+                              <TextField layoutX="427.0" layoutY="143.0" prefHeight="26.0" prefWidth="110.0" />
+                              <CheckBox layoutX="389.0" layoutY="147.0" mnemonicParsing="false" />
+                              <TextField layoutX="427.0" layoutY="181.0" prefHeight="26.0" prefWidth="110.0" />
+                              <CheckBox layoutX="389.0" layoutY="185.0" mnemonicParsing="false" />
+                              <TextField layoutX="427.0" layoutY="218.0" prefHeight="26.0" prefWidth="110.0" />
+                              <CheckBox layoutX="389.0" layoutY="222.0" mnemonicParsing="false" />
+                              <TextField layoutX="427.0" layoutY="255.0" prefHeight="26.0" prefWidth="110.0" />
+                              <CheckBox layoutX="389.0" layoutY="259.0" mnemonicParsing="false" />
+                              <CheckBox layoutX="11.0" layoutY="38.0" mnemonicParsing="false" text="No information">
+                                 <font>
+                                    <Font name="System Bold" size="12.0" />
+                                 </font>
+                              </CheckBox>
+                           </children>
+                        </AnchorPane>
                     </content>
                   </Tab>
                   <Tab text="Current Medication">
@@ -119,6 +285,11 @@
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
                     </content>
                   </Tab>
+                  <Tab text="Insurance">
+                    <content>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+                    </content>
+                  </Tab>
                   <Tab text="Other">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
@@ -133,9 +304,9 @@
             </Label>
             <DatePicker layoutX="274.0" layoutY="176.0" prefHeight="25.0" prefWidth="110.0" />
             <Label layoutX="275.0" layoutY="206.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
-            <Label layoutX="275.0" layoutY="146.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
+            <Label layoutX="275.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
             <Label layoutX="494.0" layoutY="122.0" prefHeight="25.0" prefWidth="110.0" />
-            <Label layoutX="477.0" layoutY="144.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
+            <Label layoutX="477.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" />
             <Label layoutX="397.0" layoutY="204.0" prefHeight="27.0" prefWidth="79.0" text="Urgency">
                <font>
                   <Font size="14.0" />
@@ -183,13 +354,13 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="143.0" prefWidth="150.0" />
+            <ComboBox layoutX="742.0" layoutY="145.0" prefWidth="150.0" />
             <Label layoutX="630.0" layoutY="174.0" prefHeight="27.0" prefWidth="121.0" text="Reffering Doctor">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="175.0" prefWidth="150.0" />
+            <ComboBox layoutX="742.0" layoutY="176.0" prefWidth="150.0" />
             <Label layoutX="632.0" layoutY="206.0" prefHeight="27.0" prefWidth="79.0" text="Pain Scale">
                <font>
                   <Font size="14.0" />
@@ -201,18 +372,18 @@
                </font>
             </Label>
             <ComboBox layoutX="742.0" layoutY="209.0" prefHeight="25.0" prefWidth="51.0" />
-            <Label layoutX="920.0" layoutY="139.0" prefHeight="27.0" prefWidth="121.0" text="Ward">
+            <Label layoutX="920.0" layoutY="176.0" prefHeight="27.0" prefWidth="73.0" text="Ward">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="140.0" prefHeight="25.0" prefWidth="152.0" />
-            <Label layoutX="920.0" layoutY="171.0" prefHeight="27.0" prefWidth="121.0" text="Bed">
+            <ComboBox layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" />
+            <Label layoutX="920.0" layoutY="208.0" prefHeight="27.0" prefWidth="60.0" text="Bed">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="172.0" prefHeight="25.0" prefWidth="152.0" />
+            <ComboBox layoutX="993.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" />
             <Label alignment="CENTER" layoutX="778.0" layoutY="12.0" prefHeight="17.0" prefWidth="110.0" text="VISIT MAP">
                <font>
                   <Font size="18.0" />
@@ -226,7 +397,7 @@
                   <DropShadow />
                </effect>
             </ToggleButton>
-            <Label layoutX="564.0" layoutY="84.0" text="Registered" />
+            <Label layoutX="564.0" layoutY="87.0" text="Registered" />
             <ToggleButton layoutX="652.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -235,7 +406,7 @@
                   <DropShadow />
                </effect>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="666.0" layoutY="84.0" text="Triage" />
+            <Label alignment="CENTER" layoutX="666.0" layoutY="87.0" text="Triage" />
             <ToggleButton layoutX="740.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -244,7 +415,7 @@
                   <DropShadow />
                </effect>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="734.0" layoutY="84.0" text="Being Treated" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="734.0" layoutY="87.0" text="Being Treated" textAlignment="CENTER" />
             <ToggleButton layoutX="832.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -253,7 +424,7 @@
                   <DropShadow />
                </effect>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="833.0" layoutY="84.0" prefHeight="34.0" prefWidth="59.0" text="Medical Treatment" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" layoutX="833.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Medical Treatment" textAlignment="CENTER" wrapText="true" />
             <ToggleButton layoutX="924.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0">
                <cursor>
                   <Cursor fx:constant="HAND" />
@@ -262,7 +433,7 @@
                   <DropShadow />
                </effect>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="925.0" layoutY="84.0" prefHeight="34.0" prefWidth="59.0" text="Nursing Treament" textAlignment="CENTER" wrapText="true" />
+            <Label alignment="CENTER" layoutX="925.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Nursing Treament" textAlignment="CENTER" wrapText="true" />
             <ToggleButton layoutX="1011.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: RED;" text="OUT" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -274,7 +445,13 @@
                   <DropShadow />
                </effect>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="1003.0" layoutY="84.0" prefHeight="25.0" prefWidth="73.0" text="Mark as Out" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="1003.0" layoutY="87.0" prefHeight="25.0" prefWidth="73.0" text="Mark as Out" textAlignment="CENTER" />
+            <Label layoutX="920.0" layoutY="142.0" prefHeight="27.0" prefWidth="73.0" text="Mobility">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox layoutX="994.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" />
          </children>
       </Pane>
    </children>
