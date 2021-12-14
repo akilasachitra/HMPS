@@ -13,43 +13,48 @@
    <children>
       <ToolBar layoutY="27.0" orientation="VERTICAL" prefHeight="668.0" prefWidth="107.0" style="-fx-background-color: #f6f6f7;">
         <items>
-          <Button fx:id="patientButton" ellipsisString="" mnemonicParsing="false" onAction="#onPatientButtonClick" prefHeight="67.0" prefWidth="89.0" style="-fx-background-image: url(&quot;/mages/patt.jpg&quot;);" text="Patient" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+          <Button fx:id="patientButton" ellipsisString="" mnemonicParsing="false" onAction="#onPatientButtonClick" prefHeight="67.0" prefWidth="95.0" style="-fx-background-image: url(&quot;/mages/patt.jpg&quot;);" text="Patient Detail " textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font></Button>
-            <Button fx:id="patientVisitButton" mnemonicParsing="false" onAction="#onVisitButtonClick" prefHeight="67.0" prefWidth="89.0" text="Visit" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="patientVisitButton" mnemonicParsing="false" onAction="#onVisitButtonClick" prefHeight="67.0" prefWidth="95.0" text="Patient Admission" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button alignment="CENTER" mnemonicParsing="false" onAction="#onPatientMonitorButtonClick" prefHeight="67.0" prefWidth="95.0" text="Patient Monitor" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="medProfButton" mnemonicParsing="false" onAction="#onMedProfButtonClick" prefHeight="67.0" prefWidth="95.0" text="Medical Professional detail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="opDetailButton" mnemonicParsing="false" onAction="#onOpDetailButtonClick" prefHeight="67.0" prefWidth="95.0" text="Operation Detail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="opMonitorButton" mnemonicParsing="false" onAction="#onOpMonitorButtonClick" prefHeight="67.0" prefWidth="95.0" text="Operation Monitor" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="pharmacyDetailButton" mnemonicParsing="false" onAction="#onPharmacyDetailButtonClick" prefHeight="67.0" prefWidth="95.0" text="Pharmacy Detail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button mnemonicParsing="false" prefHeight="67.0" prefWidth="89.0" text="Test" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="inventoryButton" mnemonicParsing="false" onAction="#onInventoryButtonClick" prefHeight="67.0" prefWidth="95.0" text="Inventory" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
-                  <Font name="Segoe UI Semibold" size="14.0" />
+                  <Font name="Segoe UI Semibold" size="12.0" />
+               </font>
+            </Button>
+            <Button fx:id="reportsButton" mnemonicParsing="false" onAction="#onReportsButtonClick" prefHeight="67.0" prefWidth="95.0" text="Reports" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
         </items>

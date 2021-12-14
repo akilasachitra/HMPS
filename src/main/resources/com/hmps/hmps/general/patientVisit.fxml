@@ -27,9 +27,9 @@
 
 <AnchorPane prefHeight="682.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hmps.hmps.general.PatientVisit">
    <children>
-      <Pane layoutX="25.0" layoutY="14.0" prefHeight="674.0" prefWidth="1166.0">
+      <Pane layoutX="2.0" layoutY="4.0" prefHeight="674.0" prefWidth="1166.0">
          <children>
-            <Label layoutX="563.0" layoutY="61.0" prefHeight="17.0" prefWidth="505.0" style="-fx-background-color: gray;" />
+            <Label layoutX="478.0" layoutY="61.0" prefHeight="17.0" prefWidth="505.0" style="-fx-background-color: gray;" />
             <Button layoutX="294.0" layoutY="73.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Search" />
             <Group layoutX="12.0" layoutY="14.0">
                <children>
@@ -81,7 +81,7 @@
                               <ComboBox layoutX="101.0" layoutY="107.0" prefHeight="26.0" prefWidth="161.0" promptText="In House" />
                               <TextArea layoutX="99.0" layoutY="185.0" prefHeight="65.0" prefWidth="258.0" />
                               <Label layoutX="395.0" layoutY="31.0" prefHeight="18.0" prefWidth="88.0" text="Reffered by " />
-                              <TextArea layoutX="97.0" layoutY="264.0" prefHeight="65.0" prefWidth="258.0" />
+                              <TextArea layoutX="98.0" layoutY="264.0" prefHeight="65.0" prefWidth="258.0" />
                               <Label layoutX="8.0" layoutY="263.0" prefHeight="18.0" prefWidth="88.0" text="Issue / problem" />
                               <TextField layoutX="491.0" layoutY="27.0" prefHeight="26.0" prefWidth="203.0" />
                               <Label layoutX="395.0" layoutY="71.0" prefHeight="18.0" prefWidth="95.0" text="Reffering Doctor " />
@@ -448,7 +448,6 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="494.0" layoutY="122.0" prefHeight="25.0" prefWidth="110.0" />
             <Label layoutX="477.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="O+">
                <font>
                   <Font name="System Bold" size="12.0" />
@@ -524,19 +523,19 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" promptText="Xpolinate" />
+            <ComboBox layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" promptText="Cardiology" />
             <Label layoutX="920.0" layoutY="208.0" prefHeight="27.0" prefWidth="60.0" text="Bed">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
             <ComboBox layoutX="993.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" promptText="A1022" />
-            <Label alignment="CENTER" layoutX="778.0" layoutY="12.0" prefHeight="17.0" prefWidth="110.0" text="VISIT MAP">
+            <Label alignment="CENTER" layoutX="693.0" layoutY="12.0" prefHeight="17.0" prefWidth="110.0" text="VISIT MAP">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <ToggleButton layoutX="562.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: white;" text="R">
+            <ToggleButton layoutX="477.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: white;" text="R">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -551,8 +550,8 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </ToggleButton>
-            <Label layoutX="564.0" layoutY="87.0" text="Registered" />
-            <ToggleButton layoutX="652.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: orange;" text="T">
+            <Label layoutX="479.0" layoutY="87.0" text="Registered" />
+            <ToggleButton layoutX="567.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #f0b041;" text="T">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -567,8 +566,8 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="666.0" layoutY="87.0" text="Triage" />
-            <ToggleButton layoutX="740.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="BT">
+            <Label alignment="CENTER" layoutX="581.0" layoutY="87.0" text="Triage" />
+            <ToggleButton layoutX="655.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="BT">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -583,9 +582,9 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="734.0" layoutY="87.0" text="Being Treated" textAlignment="CENTER" />
-            <Label alignment="CENTER" layoutX="833.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Medical Treatment" textAlignment="CENTER" wrapText="true" />
-            <ToggleButton layoutX="924.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: green;" text="NT" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="649.0" layoutY="87.0" text="Being Treated" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="748.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Medical Treatment" textAlignment="CENTER" wrapText="true" />
+            <ToggleButton layoutX="839.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #8dc576;" text="NT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -593,8 +592,8 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="925.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Nursing Treament" textAlignment="CENTER" wrapText="true" />
-            <ToggleButton layoutX="1011.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: RED;" text="OUT" textFill="WHITE">
+            <Label alignment="CENTER" layoutX="840.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Nursing Treament" textAlignment="CENTER" wrapText="true" />
+            <ToggleButton layoutX="926.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: RED;" text="OUT" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -602,7 +601,7 @@
                   <Cursor fx:constant="HAND" />
                </cursor>
             </ToggleButton>
-            <Label alignment="CENTER" layoutX="1003.0" layoutY="87.0" prefHeight="25.0" prefWidth="73.0" text="Mark as Out" textAlignment="CENTER" />
+            <Label alignment="CENTER" layoutX="920.0" layoutY="85.0" prefHeight="25.0" prefWidth="73.0" text="Mark as Out" textAlignment="CENTER" />
             <Label layoutX="920.0" layoutY="142.0" prefHeight="27.0" prefWidth="73.0" text="Mobility">
                <font>
                   <Font size="14.0" />
@@ -610,7 +609,7 @@
             </Label>
             <ComboBox layoutX="994.0" layoutY="145.0" prefHeight="25.0" prefWidth="150.0" promptText="Wheel Chair" />
             <TextField layoutX="173.0" layoutY="11.0" prefHeight="26.0" prefWidth="110.0" />
-            <ToggleButton layoutX="833.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: blue;" text="MT" textFill="WHITE">
+            <ToggleButton layoutX="748.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #24b5d8;" text="MT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -625,6 +624,8 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </ToggleButton>
+            <Button layoutX="1046.0" layoutY="11.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Save" />
+            <Button layoutX="1046.0" layoutY="41.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
          </children>
       </Pane>
    </children>
