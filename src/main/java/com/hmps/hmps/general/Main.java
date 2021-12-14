@@ -1,15 +1,9 @@
 package com.hmps.hmps.general;
 
-import javafx.animation.Interpolator;
-import javafx.animation.KeyFrame;
-import javafx.animation.KeyValue;
-import javafx.animation.Timeline;
-import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
+import javafx.fxml.*;
 import javafx.scene.Node;
 import javafx.scene.control.Button;
 import javafx.scene.layout.Pane;
-import javafx.util.Duration;
 
 import java.io.IOException;
 import java.util.Objects;
@@ -18,37 +12,57 @@ public class Main {
 
     public Pane mainPane;
     public Button patientButton;
+    public Button patientVisitButton;
 
     @FXML
     protected void onPatientButtonClick() throws IOException {
-        boolean found = false;
-        for (Node node : mainPane.getChildren()) {
-            if (node.getId().equals("7588")) { // todo constants
-                found = true;
-                System.out.println("already opened");
-            }
-        }
-        if (!found) {
-
-            Pane newLoadedPane = FXMLLoader.load(Objects.requireNonNull(Start.class.getResource("patientDetail.fxml")));
-            newLoadedPane.setId("7588");
-            mainPane.getChildren().add(newLoadedPane);
-            //Create new TimeLine animation
-            Timeline timeline = new Timeline();
-            //Animate Y property
-            KeyValue kv = new KeyValue(newLoadedPane.translateYProperty(), 0, Interpolator.EASE_IN);
-            KeyFrame kf = new KeyFrame(Duration.millis(1000), kv);
-            timeline.getKeyFrames().add(kf);
-            //After completing animation, remove first scene
-            timeline.setOnFinished(t -> {
-                // mainPane.getChildren().remove(newLoadedPane);
-            });
-            timeline.play();
-            System.out.println("patientDetail opened");
-
+        if (!isScreenLoaded(Screens.PATIENT_REGISTRATION_ID)) {
+            showScreen(Screens.PATIENT_REGISTRATION_ID, Screens.PATIENT_REGISTRATION_FXML);
         }
     }
 
+    @FXML
+    protected void onVisitButtonClick() throws IOException {
+        if (!isScreenLoaded(Screens.PATIENT_VISITS_ID)) {
+            showScreen(Screens.PATIENT_REGISTRATION_ID, Screens.PATIENT_VISITS_FXML);
+        }
+    }
+
+    /**
+     * Check if given screen is already loaded and showing in the scene
+     *
+     * @param screenID
+     * @return
+     */
+    private boolean isScreenLoaded(String screenID) {
+        boolean screenLoaded = false;
+        for (Node node : mainPane.getChildren()) {
+            if (node.getId().equals(screenID)) {
+                screenLoaded = true;
+                System.out.println(screenID + " already loaded");
+            }
+        }
+        return screenLoaded;
+    }
+
+
+    /**
+     * Purpose is to load and show given screen by id and fxml name
+     *
+     * @param screenID
+     * @param screenFxml
+     * @throws IOException
+     */
+    private void showScreen(String screenID, String screenFxml) throws IOException {
+        if (isScreenLoaded(Screens.PATIENT_REGISTRATION_ID)) {
+            System.err.println(screenFxml + " already opened");
+            return;
+        }
+        Pane newLoadedPane = FXMLLoader.load(Objects.requireNonNull(Start.class.getResource(screenFxml)));
+        newLoadedPane.setId(screenID);
+        mainPane.getChildren().add(newLoadedPane);
+        System.out.println(screenFxml + " opened");
+    }
 
 
 }
