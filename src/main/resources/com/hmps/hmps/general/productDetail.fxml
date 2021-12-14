@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Group?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="688.0" minWidth="1172.0" prefHeight="501.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Pane layoutX="3.0" layoutY="3.0" prefHeight="682.0" prefWidth="1166.0">
+         <children>
+            <TableView layoutX="5.0" layoutY="326.0" prefHeight="341.0" prefWidth="1157.0">
+              <columns>
+                <TableColumn prefWidth="50.39996528625488" text="Code" />
+                <TableColumn prefWidth="98.39999008178711" text="External Code" />
+                  <TableColumn minWidth="0.0" prefWidth="112.79997253417969" text="Invoice Code" />
+                  <TableColumn prefWidth="154.4000244140625" text="Name" />
+                  <TableColumn prefWidth="348.7999267578125" text="Description" />
+                  <TableColumn minWidth="0.0" prefWidth="66.4000244140625" text="Form" />
+                  <TableColumn prefWidth="132.800048828125" text="Usage" />
+                  <TableColumn prefWidth="101.60009765625" text="Location" />
+                  <TableColumn prefWidth="90.39990234375" text="Supplier " />
+              </columns>
+            </TableView>
+            <TabPane layoutX="6.0" layoutY="14.0" prefHeight="308.0" prefWidth="1147.0" tabClosingPolicy="UNAVAILABLE">
+              <tabs>
+                <Tab text="Add or Update ">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="684.0">
+                           <children>
+                              <Button layoutX="364.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="New" />
+                              <Button layoutX="466.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Save" />
+                              <Button layoutX="620.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
+                              <Group layoutX="15.0" layoutY="16.0">
+                                 <children>
+                                    <Label layoutX="1.0" layoutY="6.0" prefHeight="18.0" prefWidth="52.0" text="Code" />
+                                    <Label layoutY="65.0" prefHeight="18.0" prefWidth="92.0" text="Invoice Code" />
+                                    <Label layoutY="128.0" prefHeight="18.0" prefWidth="92.0" text="Description" />
+                                    <Label layoutY="158.0" prefHeight="18.0" prefWidth="92.0" text="Extra Info" />
+                                    <TextField layoutX="90.0" layoutY="63.0" prefHeight="26.0" prefWidth="125.0" />
+                                    <TextField layoutX="90.0" layoutY="125.0" prefHeight="26.0" prefWidth="245.0" />
+                                    <TextField layoutX="90.0" prefHeight="26.0" prefWidth="125.0" />
+                                    <Label layoutX="1.0" layoutY="36.0" prefHeight="18.0" prefWidth="88.0" text="Externam Code" />
+                                    <TextField layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="125.0" />
+                                    <Label layoutY="98.0" prefHeight="18.0" prefWidth="92.0" text="Name" />
+                                    <TextField layoutX="90.0" layoutY="94.0" prefHeight="26.0" prefWidth="245.0" />
+                                    <TextArea layoutX="90.0" layoutY="160.0" prefHeight="78.0" prefWidth="245.0" />
+                                 </children>
+                              </Group>
+                              <Label layoutX="371.0" layoutY="139.0" prefHeight="18.0" prefWidth="92.0" text="Location" />
+                              <Label layoutX="371.0" layoutY="171.0" prefHeight="18.0" prefWidth="92.0" text="Last Ordered" />
+                              <ComboBox layoutX="462.0" layoutY="139.0" prefHeight="26.0" prefWidth="128.0" promptText="Storage 2002" />
+                              <Label layoutX="371.0" layoutY="108.0" prefHeight="18.0" prefWidth="92.0" text="Usage" />
+                              <ComboBox layoutX="462.0" layoutY="108.0" prefHeight="26.0" prefWidth="128.0" promptText="Surgical" />
+                              <Label layoutX="371.0" layoutY="51.0" prefHeight="18.0" prefWidth="92.0" text="Dose 1" />
+                              <ComboBox layoutX="509.0" layoutY="47.0" prefHeight="26.0" prefWidth="82.0" promptText="Tablet" />
+                              <Label layoutX="369.0" layoutY="19.0" text="Galenical form" />
+                              <ImageView fitHeight="113.0" fitWidth="137.0" layoutX="984.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@CSS/Images/medicine.jpg" />
+                                 </image>
+                              </ImageView>
+                              <Button layoutX="1032.0" layoutY="158.0" mnemonicParsing="false" text="Upload" />
+                              <Group layoutX="643.0" layoutY="16.0">
+                                 <children>
+                                    <Label layoutX="1.0" layoutY="6.0" prefHeight="18.0" prefWidth="86.0" text="Supplier " />
+                                    <Label layoutX="1.0" layoutY="97.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 1" />
+                                    <Label layoutX="1.0" layoutY="128.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 2" />
+                                    <Label layoutX="1.0" layoutY="159.0" prefHeight="18.0" prefWidth="92.0" text="E-mail " />
+                                    <TextField disable="true" editable="false" layoutX="90.0" layoutY="93.0" prefHeight="26.0" prefWidth="150.0" text="+94071099978" />
+                                    <TextField disable="true" editable="false" layoutX="90.0" layoutY="124.0" prefHeight="26.0" prefWidth="150.0" text="+94224158678" />
+                                    <TextField disable="true" editable="false" layoutX="90.0" layoutY="156.0" prefHeight="26.0" prefWidth="150.0" text="info@interpharma.com" />
+                                    <Label layoutX="1.0" layoutY="36.0" prefHeight="18.0" prefWidth="88.0" text="Address 1" />
+                                    <TextField disable="true" editable="false" layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="220.0" text="No 21 , Gregory road" />
+                                    <Label layoutX="1.0" layoutY="67.0" prefHeight="18.0" prefWidth="89.0" text="Address 2" />
+                                    <TextField disable="true" editable="false" layoutX="90.0" layoutY="62.0" prefHeight="26.0" prefWidth="220.0" text="Salt lake , Ihowa." />
+                                    <ComboBox layoutX="90.0" prefHeight="26.0" prefWidth="178.0" promptText="INTERPHARM (PVT) LTD" />
+                                 </children>
+                              </Group>
+                              <Label layoutX="370.0" layoutY="80.0" prefHeight="18.0" prefWidth="92.0" text="Dose 2" />
+                              <ComboBox layoutX="509.0" layoutY="78.0" prefHeight="26.0" prefWidth="81.0" promptText="Tablet" />
+                              <ComboBox layoutX="462.0" layoutY="15.0" prefHeight="26.0" prefWidth="128.0" promptText="Tablet" />
+                              <DatePicker layoutX="462.0" layoutY="170.0" prefHeight="26.0" prefWidth="128.0" />
+                              <TextField layoutX="462.0" layoutY="47.0" prefHeight="26.0" prefWidth="34.0" text="1.0" />
+                              <TextField layoutX="462.0" layoutY="77.0" prefHeight="26.0" prefWidth="34.0" text="1.0" />
+                              <Label layoutX="372.0" layoutY="207.0" prefHeight="18.0" prefWidth="83.0" text="Minimum Stock" />
+                              <TextField layoutX="462.0" layoutY="201.0" prefHeight="26.0" prefWidth="52.0" />
+                           </children>
+                        </AnchorPane>
+                  </content>
+                </Tab>
+                <Tab text="Search">
+                  <content>
+                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="1147.0">
+                           <children>
+                              <Button layoutX="453.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Search" />
+                              <TextField layoutX="179.0" layoutY="132.0" prefHeight="26.0" prefWidth="169.0" />
+                              <RadioButton layoutX="20.0" layoutY="39.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="121.0" text="Search by Code" />
+                              <CheckBox layoutX="19.0" layoutY="135.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="143.0" text="Search By Name" />
+                              <CheckBox layoutX="19.0" layoutY="171.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="142.0" text="Search By Description" />
+                              <TextField layoutX="179.0" layoutY="167.0" prefHeight="26.0" prefWidth="169.0" />
+                              <TextField layoutX="180.0" layoutY="34.0" prefHeight="26.0" prefWidth="85.0" />
+                              <CheckBox layoutX="399.0" layoutY="38.0" mnemonicParsing="false" text="Search By Supplier" />
+                              <CheckBox layoutX="399.0" layoutY="71.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="156.0" text="Search By Galenical form" />
+                              <ComboBox layoutX="556.0" layoutY="66.0" prefHeight="26.0" prefWidth="179.0" promptText="Tablet" />
+                              <RadioButton layoutX="19.0" layoutY="69.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Externam Code" />
+                              <TextField layoutX="180.0" layoutY="66.0" prefHeight="26.0" prefWidth="85.0" />
+                              <RadioButton layoutX="19.0" layoutY="99.0" mnemonicParsing="false" text="Invoice Code" />
+                              <TextField layoutX="180.0" layoutY="98.0" prefHeight="26.0" prefWidth="85.0" />
+                              <CheckBox layoutX="400.0" layoutY="104.0" mnemonicParsing="false" text="Search By Usage" />
+                              <ComboBox layoutX="556.0" layoutY="98.0" prefHeight="26.0" prefWidth="178.0" promptText="Surgical" />
+                              <CheckBox layoutX="400.0" layoutY="137.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Location" />
+                              <ComboBox layoutX="556.0" layoutY="132.0" prefHeight="26.0" prefWidth="180.0" promptText="Storage 2002" />
+                              <CheckBox layoutX="400.0" layoutY="170.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Order date" />
+                              <ComboBox layoutX="556.0" layoutY="34.0" prefHeight="26.0" prefWidth="178.0" promptText="INTERPHARM (PVT) LTD" />
+                              <DatePicker layoutX="558.0" layoutY="167.0" prefHeight="26.0" prefWidth="104.0" />
+                              <DatePicker layoutX="692.0" layoutY="167.0" prefHeight="26.0" prefWidth="104.0" />
+                              <Label layoutX="670.0" layoutY="170.0" text="To" />
+                           </children></AnchorPane>
+                  </content>
+                </Tab>
+              </tabs>
+            </TabPane>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

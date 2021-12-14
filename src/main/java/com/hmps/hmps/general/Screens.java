@@ -24,7 +24,7 @@ public class Screens {
   public static final String OP_MONITOR_FXML = "operationMonitor.fxml";
 
   public static final String PHARMACY_DETAIL_ID = "7587";
-  public static final String PHARMACY_DETAIL_FXML = "pharmacyDetail.fxml";
+  public static final String PHARMACY_DETAIL_FXML = "productDetail.fxml";
 
   public static final String INVENTORY_ID = "7588";
   public static final String INVENTORY_FXML = "inventory.fxml";
