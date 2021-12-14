@@ -11,7 +11,7 @@
 
 <AnchorPane prefHeight="682.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hmps.hmps.general.PatientMonitor">
    <children>
-      <TableView layoutX="19.0" layoutY="102.0" prefHeight="565.0" prefWidth="1130.0">
+      <TableView layoutX="19.0" layoutY="102.0" prefHeight="558.0" prefWidth="1130.0">
         <columns>
           <TableColumn prefWidth="112.79998397827148" text="Patient code" />
           <TableColumn prefWidth="88.80001831054688" text="Arrival" />

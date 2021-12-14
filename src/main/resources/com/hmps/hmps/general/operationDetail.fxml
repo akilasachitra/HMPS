@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="682.0" prefWidth="1166.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hmps.hmps.general.OperationDetail">
+   <children>
+      <RadioButton layoutX="16.0" layoutY="18.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="152.0" selected="true" text="Search by Patient Code" />
+      <TextField disable="true" layoutX="183.0" layoutY="46.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField layoutX="183.0" layoutY="15.0" prefHeight="26.0" prefWidth="110.0" />
+      <RadioButton layoutX="15.0" layoutY="49.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="165.0" text="Search by Admisson No." />
+      <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="36.0" layoutY="160.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@CSS/Images/user.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="186.0" layoutY="157.0" prefHeight="27.0" prefWidth="237.0" text="Hailey H Carry">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="189.0" prefHeight="27.0" prefWidth="51.0" text="Age">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="220.0" prefHeight="27.0" prefWidth="51.0" text="Gender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="254.0" prefHeight="27.0" prefWidth="79.0" text="Blood Type ">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="285.0" layoutY="221.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="F" textAlignment="CENTER">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="285.0" layoutY="189.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="28">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="284.0" layoutY="255.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="O+">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font>
+      </Label>
+      <Label layoutX="361.0" layoutY="190.0" prefHeight="27.0" prefWidth="110.0" text="Discipline">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="473.0" layoutY="189.0" prefWidth="150.0" promptText="Cardio" />
+      <Label layoutX="361.0" layoutY="253.0" prefHeight="27.0" prefWidth="121.0" text="Surgeon">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="473.0" layoutY="255.0" prefWidth="150.0" promptText="Dr. Mackie Stan" />
+      <Label layoutX="361.0" layoutY="219.0" prefHeight="27.0" prefWidth="110.0" text="Operation Type">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="473.0" layoutY="221.0" prefWidth="150.0" promptText="Cardio" />
+      <Label layoutX="640.0" layoutY="188.0" prefHeight="27.0" prefWidth="121.0" text="Specification">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="752.0" layoutY="190.0" prefHeight="26.0" prefWidth="102.0" promptText="Left" />
+      <Label layoutX="640.0" layoutY="219.0" prefHeight="27.0" prefWidth="121.0" text="Theater">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <ComboBox layoutX="753.0" layoutY="221.0" prefHeight="26.0" prefWidth="102.0" promptText="OP_room 5" />
+      <TabPane layoutX="36.0" layoutY="309.0" prefHeight="361.0" prefWidth="634.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Pre OP Examination">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="325.0" prefWidth="634.0">
+                     <children>
+                        <TableView layoutX="16.0" layoutY="46.0" prefHeight="277.0" prefWidth="602.0">
+                          <columns>
+                            <TableColumn prefWidth="75.0" text="Date" />
+                            <TableColumn prefWidth="75.0" text="Type" />
+                              <TableColumn prefWidth="451.2000030517578" text="Examination" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="142.0" layoutY="12.0" mnemonicParsing="false" text="Browse" />
+                        <DatePicker layoutX="16.0" layoutY="12.0" prefHeight="26.0" prefWidth="110.0" />
+                        <TextField editable="false" layoutX="211.0" layoutY="12.0" prefHeight="26.0" prefWidth="303.0" />
+                        <Button layoutX="523.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Pre Anesthesia">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <DatePicker layoutX="127.0" layoutY="109.0" prefHeight="26.0" prefWidth="110.0" />
+                        <Label layoutX="20.0" layoutY="109.0" prefHeight="27.0" prefWidth="98.0" text="Anesthesia Start" />
+                        <DatePicker layoutX="128.0" layoutY="148.0" prefHeight="26.0" prefWidth="110.0" />
+                        <Label layoutX="21.0" layoutY="149.0" prefHeight="27.0" prefWidth="98.0" text="Anesthesia End" />
+                        <TextField layoutX="243.0" layoutY="109.0" prefHeight="26.0" prefWidth="51.0" />
+                        <TextField layoutX="243.0" layoutY="148.0" prefHeight="26.0" prefWidth="51.0" />
+                        <ComboBox layoutX="302.0" layoutY="109.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+                        <ComboBox layoutX="302.0" layoutY="148.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+                        <Button layoutX="388.0" layoutY="108.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="98.0" style="-fx-background-color: #F3647e;" text="START" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="388.0" layoutY="146.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" style="-fx-background-color: #82fd82;" text="STOP">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Button>
+                        <Label layoutX="20.0" layoutY="31.0" prefHeight="27.0" prefWidth="121.0" text="Room" />
+                        <ComboBox layoutX="127.0" layoutY="31.0" prefHeight="26.0" prefWidth="166.0" promptText="Anesthesia room 2" />
+                        <Label layoutX="20.0" layoutY="69.0" prefHeight="27.0" prefWidth="121.0" text="Anaesthetist" />
+                        <ComboBox layoutX="127.0" layoutY="69.0" prefHeight="26.0" prefWidth="166.0" promptText="Dr. Wick Jhone" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Atendees">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="16.0" layoutY="44.0" prefHeight="277.0" prefWidth="602.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Type" />
+                              <TableColumn prefWidth="526.400015258789" text="Name" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="523.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add" />
+                        <ComboBox layoutX="78.0" layoutY="10.0" prefHeight="26.0" prefWidth="98.0" promptText="Nurse" />
+                        <Label layoutX="27.0" layoutY="9.0" prefHeight="27.0" prefWidth="51.0" text="Type">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="189.0" layoutY="8.0" prefHeight="27.0" prefWidth="102.0" text="Surgical team">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                        <ComboBox layoutX="299.0" layoutY="9.0" prefHeight="26.0" prefWidth="211.0" promptText="Jane Watson" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+            <Tab text="Prescriptions">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView layoutX="16.0" layoutY="45.0" prefHeight="277.0" prefWidth="602.0">
+                           <columns>
+                              <TableColumn prefWidth="75.0" text="Type" />
+                              <TableColumn prefWidth="526.400015258789" text="Prescriptions" />
+                           </columns>
+                        </TableView>
+                        <Button layoutX="16.0" layoutY="12.0" mnemonicParsing="false" text="Browse" />
+                        <TextField editable="false" layoutX="90.0" layoutY="12.0" prefHeight="26.0" prefWidth="426.0" />
+                        <Button layoutX="525.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add" />
+                     </children>
+                  </AnchorPane>
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+      <TableView layoutX="719.0" layoutY="349.0" prefHeight="314.0" prefWidth="438.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="code" />
+          <TableColumn prefWidth="280.79998779296875" text="Product Name" />
+            <TableColumn prefWidth="75.0" text="Qty." />
+        </columns>
+      </TableView>
+      <Text layoutX="719.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code" />
+      <TextField layoutX="762.0" layoutY="311.0" prefHeight="26.0" prefWidth="110.0" />
+      <TextField layoutX="913.0" layoutY="310.0" prefHeight="26.0" prefWidth="51.0" />
+      <Text layoutX="884.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty." />
+      <Button layoutX="975.0" layoutY="311.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Consume" />
+      <Button layoutX="1075.0" layoutY="311.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="79.0" text="Undo" />
+      <DatePicker layoutX="426.0" layoutY="12.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="319.0" layoutY="12.0" prefHeight="27.0" prefWidth="98.0" text="Arrival to OR" />
+      <DatePicker layoutX="427.0" layoutY="43.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="320.0" layoutY="44.0" prefHeight="27.0" prefWidth="98.0" text="Arrival to Theater" />
+      <TextField layoutX="542.0" layoutY="12.0" prefHeight="26.0" prefWidth="51.0" />
+      <TextField layoutX="542.0" layoutY="43.0" prefHeight="26.0" prefWidth="51.0" />
+      <ComboBox layoutX="601.0" layoutY="12.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+      <ComboBox layoutX="601.0" layoutY="43.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+      <DatePicker editable="false" layoutX="427.0" layoutY="75.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="320.0" layoutY="75.0" prefHeight="27.0" prefWidth="98.0" text="Anesthesia Start" />
+      <DatePicker editable="false" layoutX="428.0" layoutY="106.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="321.0" layoutY="107.0" prefHeight="27.0" prefWidth="98.0" text="Anesthesia End" />
+      <TextField editable="false" layoutX="543.0" layoutY="75.0" prefHeight="26.0" prefWidth="51.0" />
+      <TextField editable="false" layoutX="543.0" layoutY="106.0" prefHeight="26.0" prefWidth="51.0" />
+      <ComboBox editable="true" layoutX="602.0" layoutY="75.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+      <ComboBox editable="true" layoutX="602.0" layoutY="106.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+      <DatePicker editable="false" layoutX="796.0" layoutY="10.0" prefHeight="26.0" prefWidth="110.0" promptText="12/15/2021" />
+      <Label layoutX="696.0" layoutY="10.0" prefHeight="27.0" prefWidth="98.0" text="Operation Start " />
+      <DatePicker editable="false" layoutX="797.0" layoutY="41.0" prefHeight="26.0" prefWidth="110.0" promptText="12/15/2021" />
+      <Label layoutX="697.0" layoutY="42.0" prefHeight="27.0" prefWidth="98.0" text="Operation Stop" />
+      <TextField editable="false" layoutX="915.0" layoutY="10.0" prefHeight="26.0" prefWidth="51.0" promptText="10.30" />
+      <TextField editable="false" layoutX="915.0" layoutY="41.0" prefHeight="26.0" prefWidth="51.0" promptText="10.45" />
+      <ComboBox editable="true" layoutX="972.0" layoutY="10.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+      <ComboBox editable="true" layoutX="972.0" layoutY="41.0" prefHeight="26.0" prefWidth="66.0" promptText="AM" />
+      <DatePicker layoutX="797.0" layoutY="73.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="697.0" layoutY="73.0" prefHeight="27.0" prefWidth="98.0" text="Out of Theater" />
+      <DatePicker layoutX="798.0" layoutY="104.0" prefHeight="26.0" prefWidth="110.0" />
+      <Label layoutX="698.0" layoutY="105.0" prefHeight="27.0" prefWidth="98.0" text="Out of OR" />
+      <TextField layoutX="916.0" layoutY="73.0" prefHeight="26.0" prefWidth="51.0" />
+      <TextField layoutX="916.0" layoutY="104.0" prefHeight="26.0" prefWidth="51.0" />
+      <ComboBox layoutX="973.0" layoutY="73.0" prefHeight="26.0" prefWidth="66.0" promptText="PM" />
+      <ComboBox layoutX="973.0" layoutY="104.0" prefHeight="26.0" prefWidth="66.0" promptText="PM" />
+      <Button layoutX="1056.0" layoutY="10.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Save" />
+      <Button layoutX="1056.0" layoutY="41.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
+      <Button layoutX="1055.0" layoutY="168.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="98.0" style="-fx-background-color: #F3647e;" text="START" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <Button layoutX="1055.0" layoutY="237.0" mnemonicParsing="false" prefHeight="64.0" prefWidth="98.0" style="-fx-background-color: #82fd82;" text="STOP">
+         <font>
+            <Font name="System Bold" size="14.0" />
+         </font>
+      </Button>
+      <RadioButton layoutX="15.0" layoutY="83.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
+      <TextField disable="true" layoutX="183.0" layoutY="78.0" prefHeight="26.0" prefWidth="110.0" />
+      <Button layoutX="182.0" layoutY="110.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="110.0" text="Search" />
+   </children>
+</AnchorPane>

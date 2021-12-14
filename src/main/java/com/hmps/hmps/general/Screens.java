@@ -32,4 +32,7 @@ public class Screens {
   public static final String REPORTS_ID = "7589";
   public static final String REPORTS_FXML = "reports.fxml";
 
+  public static final String WELCOME_ID = "7590";
+  public static final String WELCOME_FXML = "welcome.fxml";
+
 }

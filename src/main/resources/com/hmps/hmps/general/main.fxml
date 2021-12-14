@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.ToolBar?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 <?import javafx.scene.text.Font?>
@@ -42,7 +45,7 @@
                   <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="pharmacyDetailButton" mnemonicParsing="false" onAction="#onPharmacyDetailButtonClick" prefHeight="67.0" prefWidth="95.0" text="Pharmacy Detail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="pharmacyDetailButton" mnemonicParsing="false" onAction="#onPharmacyDetailButtonClick" prefHeight="67.0" prefWidth="95.0" text="Product Detail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="12.0" />
                </font>
@@ -59,7 +62,23 @@
             </Button>
         </items>
       </ToolBar>
-      <Pane fx:id="mainPane" layoutX="107.0" layoutY="27.0" prefHeight="668.0" prefWidth="1172.0" />
+      <Pane fx:id="mainPane" layoutX="107.0" layoutY="27.0" prefHeight="668.0" prefWidth="1172.0" style="-fx-background-color: white;">
+         <children>
+            <Pane layoutX="474.0" layoutY="109.0" style="-fx-background-color: white;">
+               <children>
+                  <ImageView fitHeight="240.0" fitWidth="249.0" layoutY="1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../CSS/Images/logo.gif" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+            <Label layoutX="503.0" layoutY="346.0" prefHeight="54.0" prefWidth="174.0" text="HPMS 1.0v">
+               <font>
+                  <Font size="36.0" />
+               </font>
+            </Label>
+         </children></Pane>
       <MenuBar layoutY="1.0" prefHeight="26.0" prefWidth="1280.0" style="-fx-background-color: #f6f6f7;">
         <menus>
           <Menu mnemonicParsing="false" text="File">
