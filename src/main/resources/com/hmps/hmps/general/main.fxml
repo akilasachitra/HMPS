@@ -45,7 +45,7 @@
                   <Font name="Segoe UI Semibold" size="12.0" />
                </font>
             </Button>
-            <Button fx:id="pharmacyDetailButton" mnemonicParsing="false" onAction="#onPharmacyDetailButtonClick" prefHeight="67.0" prefWidth="95.0" text="Product Detail" textAlignment="CENTER" textFill="WHITE" wrapText="true">
+            <Button fx:id="pharmacyDetailButton" mnemonicParsing="false" onAction="#onPharmacyDetailButtonClick" prefHeight="67.0" prefWidth="95.0" text="Product Management" textAlignment="CENTER" textFill="WHITE" wrapText="true">
                <font>
                   <Font name="Segoe UI Semibold" size="12.0" />
                </font>
@@ -83,7 +83,8 @@
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem mnemonicParsing="false" text="Close" />
+              <MenuItem mnemonicParsing="false" text="Log Off" />
+                  <MenuItem mnemonicParsing="false" text="Quit" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -91,16 +92,49 @@
               <MenuItem mnemonicParsing="false" text="Delete" />
             </items>
           </Menu>
+            <Menu mnemonicParsing="false" text="Master Data">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Action 1" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Patient">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Patient Detail" />
+                  <MenuItem mnemonicParsing="false" text="Patient Admission" />
+                  <MenuItem mnemonicParsing="false" text="Patient Monitor" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Medical Professional">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Med prof Detail" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Operation">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Operation Detail" />
+                  <MenuItem mnemonicParsing="false" text="Operation Monitor" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Product Management">
+              <items>
+                <MenuItem mnemonicParsing="false" text="Product Detail" />
+              </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Inventory">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Inventory Management" />
+               </items>
+            </Menu>
+            <Menu mnemonicParsing="false" text="Reports ">
+               <items>
+                  <MenuItem mnemonicParsing="false" text="Management Reports" />
+               </items>
+            </Menu>
           <Menu mnemonicParsing="false" text="Help">
             <items>
               <MenuItem mnemonicParsing="false" text="About" />
             </items>
           </Menu>
-            <Menu mnemonicParsing="false" text="Action">
-              <items>
-                <MenuItem mnemonicParsing="false" text="Action 1" />
-              </items>
-            </Menu>
         </menus>
       </MenuBar>
    </children>
