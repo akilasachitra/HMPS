@@ -41,33 +41,29 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="684.0">
                            <children>
-                              <Button layoutX="364.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="New" />
-                              <Button layoutX="466.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Save" />
-                              <Button layoutX="620.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
-                              <Group layoutX="15.0" layoutY="16.0">
-                                 <children>
-                                    <Label layoutX="1.0" layoutY="6.0" prefHeight="18.0" prefWidth="52.0" text="Code" />
-                                    <Label layoutY="65.0" prefHeight="18.0" prefWidth="92.0" text="Invoice Code" />
-                                    <Label layoutY="128.0" prefHeight="18.0" prefWidth="92.0" text="Description" />
-                                    <Label layoutY="158.0" prefHeight="18.0" prefWidth="92.0" text="Extra Info" />
-                                    <TextField layoutX="90.0" layoutY="63.0" prefHeight="26.0" prefWidth="125.0" />
-                                    <TextField layoutX="90.0" layoutY="125.0" prefHeight="26.0" prefWidth="245.0" />
-                                    <TextField layoutX="90.0" prefHeight="26.0" prefWidth="125.0" />
-                                    <Label layoutX="1.0" layoutY="36.0" prefHeight="18.0" prefWidth="88.0" text="Externam Code" />
-                                    <TextField layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="125.0" />
-                                    <Label layoutY="98.0" prefHeight="18.0" prefWidth="92.0" text="Name" />
-                                    <TextField layoutX="90.0" layoutY="94.0" prefHeight="26.0" prefWidth="245.0" />
-                                    <TextArea layoutX="90.0" layoutY="160.0" prefHeight="78.0" prefWidth="245.0" />
-                                 </children>
-                              </Group>
-                              <Label layoutX="371.0" layoutY="139.0" prefHeight="18.0" prefWidth="92.0" text="Location" />
-                              <Label layoutX="371.0" layoutY="171.0" prefHeight="18.0" prefWidth="92.0" text="Last Ordered" />
+                              <Button layoutX="364.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="New" />
+                              <Button layoutX="466.0" layoutY="242.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Save" />
+                              <Button layoutX="620.0" layoutY="241.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
+                              <Label layoutX="17.0" layoutY="22.0" prefHeight="18.0" prefWidth="52.0" text="Code" />
+                              <Label layoutX="17.0" layoutY="81.0" prefHeight="18.0" prefWidth="92.0" text="Invoice Code" />
+                              <Label layoutX="17.0" layoutY="144.0" prefHeight="18.0" prefWidth="92.0" text="Description" />
+                              <Label layoutX="17.0" layoutY="171.0" prefHeight="18.0" prefWidth="92.0" text="Extra Info" />
+                              <TextField layoutX="105.0" layoutY="79.0" prefHeight="26.0" prefWidth="125.0" />
+                              <TextField layoutX="105.0" layoutY="141.0" prefHeight="26.0" prefWidth="245.0" />
+                              <TextField layoutX="105.0" layoutY="16.0" prefHeight="26.0" prefWidth="125.0" />
+                              <Label layoutX="17.0" layoutY="52.0" prefHeight="18.0" prefWidth="88.0" text="External Code" />
+                              <TextField layoutX="105.0" layoutY="47.0" prefHeight="26.0" prefWidth="125.0" />
+                              <Label layoutX="17.0" layoutY="114.0" prefHeight="18.0" prefWidth="92.0" text="Name" />
+                              <TextField layoutX="105.0" layoutY="110.0" prefHeight="26.0" prefWidth="245.0" />
+                              <TextArea layoutX="105.0" layoutY="173.0" prefHeight="78.0" prefWidth="245.0" />
+                              <Label layoutX="370.0" layoutY="139.0" prefHeight="18.0" prefWidth="92.0" text="Location" />
+                              <Label layoutX="370.0" layoutY="171.0" prefHeight="18.0" prefWidth="92.0" text="Last Ordered" />
                               <ComboBox layoutX="462.0" layoutY="139.0" prefHeight="26.0" prefWidth="128.0" promptText="Storage 2002" />
-                              <Label layoutX="371.0" layoutY="108.0" prefHeight="18.0" prefWidth="92.0" text="Usage" />
+                              <Label layoutX="370.0" layoutY="108.0" prefHeight="18.0" prefWidth="92.0" text="Usage" />
                               <ComboBox layoutX="462.0" layoutY="108.0" prefHeight="26.0" prefWidth="128.0" promptText="Surgical" />
-                              <Label layoutX="371.0" layoutY="51.0" prefHeight="18.0" prefWidth="92.0" text="Dose 1" />
+                              <Label layoutX="370.0" layoutY="51.0" prefHeight="18.0" prefWidth="92.0" text="Dose 1" />
                               <ComboBox layoutX="509.0" layoutY="47.0" prefHeight="26.0" prefWidth="82.0" promptText="Tablet" />
-                              <Label layoutX="369.0" layoutY="19.0" text="Galenical form" />
+                              <Label layoutX="370.0" layoutY="19.0" text="Galenical form" />
                               <ImageView fitHeight="113.0" fitWidth="137.0" layoutX="984.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@CSS/Images/medicine.jpg" />
@@ -96,7 +92,7 @@
                               <DatePicker layoutX="462.0" layoutY="170.0" prefHeight="26.0" prefWidth="128.0" />
                               <TextField layoutX="462.0" layoutY="47.0" prefHeight="26.0" prefWidth="34.0" text="1.0" />
                               <TextField layoutX="462.0" layoutY="77.0" prefHeight="26.0" prefWidth="34.0" text="1.0" />
-                              <Label layoutX="372.0" layoutY="207.0" prefHeight="18.0" prefWidth="83.0" text="Minimum Stock" />
+                              <Label layoutX="370.0" layoutY="207.0" prefHeight="18.0" prefWidth="83.0" text="Minimum Stock" />
                               <TextField layoutX="462.0" layoutY="201.0" prefHeight="26.0" prefWidth="52.0" />
                            </children>
                         </AnchorPane>

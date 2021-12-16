@@ -117,57 +117,47 @@
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>
-                              <Label layoutX="10.0" layoutY="30.0" prefHeight="18.0" prefWidth="73.0" text="Time" />
-                              <TextField layoutX="103.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="10.0" layoutY="29.0" prefHeight="18.0" prefWidth="73.0" text="Time" />
+                              <TextField layoutX="104.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
                               <ComboBox layoutX="165.0" layoutY="26.0" prefHeight="26.0" prefWidth="73.0" promptText="AM" />
                               <Label layoutX="10.0" layoutY="67.0" prefHeight="18.0" prefWidth="88.0" text="Blood pressure" />
-                              <TextField layoutX="103.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
+                              <TextField layoutX="104.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
                               <Label layoutX="10.0" layoutY="106.0" prefHeight="18.0" prefWidth="88.0" text="Pulse" />
-                              <TextField layoutX="103.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
+                              <TextField layoutX="104.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
                               <Label layoutX="11.0" layoutY="146.0" prefHeight="18.0" prefWidth="95.0" text="Respiration rate" />
                               <TextField layoutX="104.0" layoutY="142.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="11.0" layoutY="183.0" prefHeight="18.0" prefWidth="88.0" text="Resp condition" />
-                              <TextField layoutX="104.0" layoutY="179.0" prefHeight="26.0" prefWidth="134.0" />
-                              <Label layoutX="11.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Pulse" />
-                              <TextField layoutX="104.0" layoutY="216.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="11.0" layoutY="258.0" prefHeight="18.0" prefWidth="88.0" text="Saturated O2" />
-                              <TextField layoutX="104.0" layoutY="254.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="11.0" layoutY="294.0" prefHeight="18.0" prefWidth="88.0" text="Oxygen L/Min" />
-                              <TextField layoutX="104.0" layoutY="290.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="264.0" layoutY="30.0" prefHeight="18.0" prefWidth="88.0" text="Nebulisation /hr" />
-                              <TextField layoutX="357.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="264.0" layoutY="67.0" prefHeight="18.0" prefWidth="88.0" text="Temp c" />
-                              <TextField layoutX="357.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="264.0" layoutY="106.0" prefHeight="18.0" prefWidth="88.0" text="Calpillary refill" />
-                              <TextField layoutX="357.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="265.0" layoutY="146.0" prefHeight="18.0" prefWidth="95.0" text="Skin Color" />
-                              <Label layoutX="265.0" layoutY="183.0" prefHeight="18.0" prefWidth="88.0" text="Resp condition" />
-                              <TextField layoutX="358.0" layoutY="179.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="265.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Pulse" />
-                              <TextField layoutX="358.0" layoutY="216.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="265.0" layoutY="258.0" prefHeight="18.0" prefWidth="88.0" text="Saturated O2" />
-                              <TextField layoutX="358.0" layoutY="254.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="265.0" layoutY="292.0" prefHeight="18.0" prefWidth="88.0" text="Oxygen L/Min" />
-                              <TextField layoutX="358.0" layoutY="288.0" prefHeight="26.0" prefWidth="51.0" />
-                              <ComboBox layoutX="358.0" layoutY="139.0" prefHeight="26.0" prefWidth="110.0" promptText="Fair" />
-                              <Label layoutX="505.0" layoutY="30.0" prefHeight="18.0" prefWidth="88.0" text="Blood sugar" />
-                              <TextField layoutX="598.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="505.0" layoutY="67.0" prefHeight="18.0" prefWidth="88.0" text="Urine floor" />
-                              <TextField layoutX="598.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="505.0" layoutY="106.0" prefHeight="18.0" prefWidth="88.0" text="Weight" />
-                              <TextField layoutX="598.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="506.0" layoutY="146.0" prefHeight="18.0" prefWidth="95.0" text="Eye opening" />
-                              <Label layoutX="506.0" layoutY="183.0" prefHeight="18.0" prefWidth="88.0" text="Verbal response" />
-                              <TextField layoutX="599.0" layoutY="179.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="506.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Motor funtion" />
-                              <TextField layoutX="599.0" layoutY="216.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="506.0" layoutY="258.0" prefHeight="18.0" prefWidth="88.0" text="Pupils" />
-                              <TextField layoutX="599.0" layoutY="254.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="506.0" layoutY="292.0" prefHeight="18.0" prefWidth="88.0" text="Pupil reaction" />
-                              <TextField layoutX="599.0" layoutY="288.0" prefHeight="26.0" prefWidth="51.0" />
-                              <Label layoutX="728.0" layoutY="30.0" prefHeight="18.0" prefWidth="60.0" text="Remark" />
-                              <TextArea layoutX="797.0" layoutY="24.0" prefHeight="200.0" prefWidth="281.0" />
-                              <TextField layoutX="598.0" layoutY="139.0" prefHeight="26.0" prefWidth="121.0" />
+                              <Label layoutX="11.0" layoutY="185.0" prefHeight="18.0" prefWidth="88.0" text="Resp condition" />
+                              <TextField layoutX="104.0" layoutY="180.0" prefHeight="26.0" prefWidth="134.0" />
+                              <Label layoutX="11.0" layoutY="220.0" prefHeight="18.0" prefWidth="88.0" text="Saturated O2" />
+                              <TextField layoutX="104.0" layoutY="220.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="11.0" layoutY="255.0" prefHeight="18.0" prefWidth="88.0" text="Oxygen L/Min" />
+                              <TextField layoutX="104.0" layoutY="257.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="11.0" layoutY="296.0" prefHeight="18.0" prefWidth="88.0" text="Nebulisation /hr" />
+                              <TextField layoutX="104.0" layoutY="294.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="265.0" layoutY="29.0" prefHeight="18.0" prefWidth="88.0" text="Temp c" />
+                              <TextField layoutX="360.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="264.0" layoutY="68.0" prefHeight="18.0" prefWidth="88.0" text="Calpillary refill" />
+                              <TextField layoutX="360.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="265.0" layoutY="108.0" prefHeight="18.0" prefWidth="95.0" text="Skin Color" />
+                              <ComboBox layoutX="360.0" layoutY="102.0" prefHeight="26.0" prefWidth="110.0" promptText="Fair" />
+                              <Label layoutX="267.0" layoutY="147.0" prefHeight="18.0" prefWidth="88.0" text="Blood sugar" />
+                              <TextField layoutX="360.0" layoutY="142.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="267.0" layoutY="184.0" prefHeight="18.0" prefWidth="88.0" text="Urine floor" />
+                              <TextField layoutX="360.0" layoutY="182.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="267.0" layoutY="223.0" prefHeight="18.0" prefWidth="88.0" text="Weight" />
+                              <TextField layoutX="360.0" layoutY="219.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="268.0" layoutY="263.0" prefHeight="18.0" prefWidth="95.0" text="Eye opening" />
+                              <Label layoutX="267.0" layoutY="296.0" prefHeight="18.0" prefWidth="88.0" text="Verbal response" />
+                              <TextField layoutX="361.0" layoutY="294.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="520.0" layoutY="29.0" prefHeight="18.0" prefWidth="88.0" text="Motor funtion" />
+                              <TextField layoutX="614.0" layoutY="26.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="520.0" layoutY="68.0" prefHeight="18.0" prefWidth="88.0" text="Pupils" />
+                              <TextField layoutX="614.0" layoutY="64.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="520.0" layoutY="108.0" prefHeight="18.0" prefWidth="88.0" text="Pupil reaction" />
+                              <TextField layoutX="614.0" layoutY="102.0" prefHeight="26.0" prefWidth="51.0" />
+                              <Label layoutX="520.0" layoutY="147.0" prefHeight="18.0" prefWidth="60.0" text="Remarks" />
+                              <TextArea layoutX="614.0" layoutY="142.0" prefHeight="146.0" prefWidth="455.0" />
+                              <TextField layoutX="360.0" layoutY="256.0" prefHeight="26.0" prefWidth="121.0" />
                            </children>
                         </AnchorPane>
                     </content>
@@ -187,7 +177,7 @@
                         </AnchorPane>
                     </content>
                   </Tab>
-                  <Tab text="Examination">
+                  <Tab text="Examinations">
                     <content>
                       <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                            <children>

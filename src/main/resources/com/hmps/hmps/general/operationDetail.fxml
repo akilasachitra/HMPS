@@ -92,7 +92,7 @@
          </font>
       </Label>
       <ComboBox layoutX="753.0" layoutY="221.0" prefHeight="26.0" prefWidth="102.0" promptText="OP_room 5" />
-      <TabPane layoutX="36.0" layoutY="309.0" prefHeight="361.0" prefWidth="634.0" tabClosingPolicy="UNAVAILABLE">
+      <TabPane layoutX="36.0" layoutY="309.0" prefHeight="362.0" prefWidth="643.0" tabClosingPolicy="UNAVAILABLE">
         <tabs>
           <Tab text="Pre OP Examination">
             <content>
@@ -174,26 +174,30 @@
               <content>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
                      <children>
-                        <TableView layoutX="16.0" layoutY="45.0" prefHeight="277.0" prefWidth="602.0">
+                        <TableView layoutX="19.0" layoutY="58.0" prefHeight="262.0" prefWidth="598.0">
                            <columns>
-                              <TableColumn prefWidth="75.0" text="Type" />
-                              <TableColumn prefWidth="526.400015258789" text="Prescriptions" />
+                              <TableColumn prefWidth="75.0" text="code" />
+                              <TableColumn prefWidth="443.19996643066406" text="Product Name" />
+                              <TableColumn prefWidth="80.00006103515625" text="Qty." />
                            </columns>
                         </TableView>
-                        <Button layoutX="16.0" layoutY="12.0" mnemonicParsing="false" text="Browse" />
-                        <TextField editable="false" layoutX="90.0" layoutY="12.0" prefHeight="26.0" prefWidth="426.0" />
-                        <Button layoutX="525.0" layoutY="12.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add" />
+                        <TextField layoutX="57.0" layoutY="20.0" prefHeight="26.0" prefWidth="110.0" />
+                        <TextField layoutX="215.0" layoutY="20.0" prefHeight="26.0" prefWidth="51.0" />
+                        <Button layoutX="425.0" layoutY="20.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Add" />
+                        <Button layoutX="526.0" layoutY="20.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="90.0" text="Remove" />
+                        <Text layoutX="19.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code" />
+                        <Text layoutX="182.0" layoutY="36.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Qty." />
                      </children>
                   </AnchorPane>
               </content>
             </Tab>
         </tabs>
       </TabPane>
-      <TableView layoutX="719.0" layoutY="349.0" prefHeight="314.0" prefWidth="438.0">
+      <TableView layoutX="719.0" layoutY="349.0" prefHeight="308.0" prefWidth="438.0">
         <columns>
           <TableColumn prefWidth="75.0" text="code" />
           <TableColumn prefWidth="280.79998779296875" text="Product Name" />
-            <TableColumn prefWidth="75.0" text="Qty." />
+            <TableColumn prefWidth="81.60007324218748" text="Qty." />
         </columns>
       </TableView>
       <Text layoutX="719.0" layoutY="328.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Code" />

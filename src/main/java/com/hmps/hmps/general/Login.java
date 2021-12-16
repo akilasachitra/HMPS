@@ -12,12 +12,10 @@ import javafx.stage.Stage;
 import java.io.IOException;
 
 public class Login {
-
     @FXML
     Button loginBtn;
     @FXML
     Button registerBtn;
-
     @FXML
     protected void onLoginButtonClick() throws IOException {
         Parent root;
