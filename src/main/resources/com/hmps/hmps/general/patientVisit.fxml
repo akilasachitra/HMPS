@@ -30,16 +30,16 @@
       <Pane layoutX="2.0" layoutY="4.0" prefHeight="674.0" prefWidth="1166.0">
          <children>
             <Label layoutX="478.0" layoutY="61.0" prefHeight="17.0" prefWidth="505.0" style="-fx-background-color: gray;" />
-            <Button layoutX="294.0" layoutY="73.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="88.0" text="Search" />
+            <Button fx:id="btnSearch" layoutX="294.0" layoutY="73.0" mnemonicParsing="false" onAction="#onBtnSearch" prefHeight="26.0" prefWidth="88.0" text="Search" />
             <Group layoutX="12.0" layoutY="14.0">
                <children>
-                  <RadioButton layoutX="1.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="152.0" selected="true" text="Search by Patient Code" />
-                  <RadioButton layoutY="31.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
-                  <RadioButton layoutY="62.0" mnemonicParsing="false" text="Search by Social Security" />
+                  <RadioButton fx:id="btnPatientCode" layoutX="1.0" mnemonicParsing="false" onAction="#onbtnPatientCode" prefHeight="18.0" prefWidth="152.0" selected="true" text="Search by Patient Code" />
+                  <RadioButton fx:id="btnHisCode" layoutY="31.0" mnemonicParsing="false" onAction="#onBtnHisCode" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
+                  <RadioButton fx:id="btnSocialSecurityCodeText" layoutY="62.0" mnemonicParsing="false" onAction="#onbtnSocialSecurityCodeText" text="Search by Social Security" />
                </children>
             </Group>
-            <TextField disable="true" layoutX="173.0" layoutY="42.0" prefHeight="26.0" prefWidth="110.0" />
-            <TextField disable="true" layoutX="173.0" layoutY="73.0" prefHeight="26.0" prefWidth="110.0" />
+            <TextField fx:id="hisCodeText" disable="true" layoutX="173.0" layoutY="42.0" onAction="#onHisCodetText" prefHeight="26.0" prefWidth="110.0" />
+            <TextField fx:id="socialSecurityCodeText" disable="true" layoutX="173.0" layoutY="73.0" onAction="#onSocialSecurityCodeText" prefHeight="26.0" prefWidth="110.0" />
             <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="26.0" layoutY="116.0" pickOnBounds="true" preserveRatio="true">
                <image>
                   <Image url="@CSS/Images/user.png" />
@@ -55,7 +55,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Label layoutX="176.0" layoutY="174.0" prefHeight="27.0" prefWidth="95.0" text="Arrival Time">
+            <Label layoutX="176.0" layoutY="174.0" prefHeight="27.0" prefWidth="95.0" text="Arrival Date">
                <font>
                   <Font size="14.0" />
                </font>
@@ -72,23 +72,23 @@
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="380.0" prefWidth="1120.0">
                            <children>
                               <Label layoutX="8.0" layoutY="31.0" prefHeight="18.0" prefWidth="73.0" text="Arrival Time" />
-                              <DatePicker layoutX="101.0" layoutY="27.0" prefHeight="26.0" prefWidth="95.0" />
-                              <TextField layoutX="210.0" layoutY="27.0" prefHeight="26.0" prefWidth="51.0" />
-                              <ComboBox layoutX="270.0" layoutY="27.0" prefHeight="26.0" prefWidth="73.0" promptText="AM" />
+                              <DatePicker fx:id="dpArrivalDate2" layoutX="101.0" layoutY="27.0" prefHeight="26.0" prefWidth="95.0" />
+                              <TextField fx:id="dpArrivalTime" layoutX="210.0" layoutY="27.0" prefHeight="26.0" prefWidth="51.0" />
+                              <ComboBox fx:id="cmbBoxAmPm" layoutX="270.0" layoutY="27.0" prefHeight="26.0" prefWidth="73.0" promptText="AM" />
                               <Label layoutX="8.0" layoutY="71.0" prefHeight="18.0" prefWidth="88.0" text="Transpotation " />
-                              <ComboBox layoutX="101.0" layoutY="67.0" prefHeight="26.0" prefWidth="161.0" promptText="Ambulant" />
+                              <ComboBox fx:id="cmbBoxTranspotation" layoutX="101.0" layoutY="67.0" prefHeight="26.0" prefWidth="161.0" promptText="Ambulant" />
                               <Label layoutX="8.0" layoutY="111.0" prefHeight="18.0" prefWidth="88.0" text="Intake Place" />
-                              <ComboBox layoutX="101.0" layoutY="107.0" prefHeight="26.0" prefWidth="161.0" promptText="In House" />
-                              <TextArea layoutX="99.0" layoutY="185.0" prefHeight="65.0" prefWidth="258.0" />
+                              <ComboBox fx:id="cmbBoxIntakePlace" layoutX="101.0" layoutY="107.0" prefHeight="26.0" prefWidth="161.0" promptText="In House" />
+                              <TextArea fx:id="textReason" layoutX="99.0" layoutY="185.0" prefHeight="65.0" prefWidth="258.0" />
                               <Label layoutX="395.0" layoutY="31.0" prefHeight="18.0" prefWidth="88.0" text="Reffered by " />
-                              <TextArea layoutX="98.0" layoutY="264.0" prefHeight="65.0" prefWidth="258.0" />
+                              <TextArea fx:id="textIssue" layoutX="98.0" layoutY="264.0" prefHeight="65.0" prefWidth="258.0" />
                               <Label layoutX="8.0" layoutY="263.0" prefHeight="18.0" prefWidth="88.0" text="Issue / problem" />
-                              <TextField layoutX="491.0" layoutY="27.0" prefHeight="26.0" prefWidth="203.0" />
+                              <TextField fx:id="textRefBy" layoutX="491.0" layoutY="27.0" prefHeight="26.0" prefWidth="203.0" />
                               <Label layoutX="395.0" layoutY="71.0" prefHeight="18.0" prefWidth="95.0" text="Reffering Doctor " />
-                              <ComboBox layoutX="491.0" layoutY="67.0" prefHeight="26.0" prefWidth="203.0" promptText="Dr. Steeve Rickson" />
+                              <ComboBox fx:id="cmbBoxRefDoc2" layoutX="491.0" layoutY="67.0" prefHeight="26.0" prefWidth="203.0" promptText="Dr. Steeve Rickson" />
                               <Label layoutX="8.0" layoutY="184.0" prefHeight="18.0" prefWidth="88.0" text="Reason" />
                               <Label layoutX="8.0" layoutY="148.0" prefHeight="18.0" prefWidth="88.0" text="Intake Type" />
-                              <ComboBox layoutX="99.0" layoutY="144.0" prefHeight="26.0" prefWidth="161.0" promptText="Mug Visit" />
+                              <ComboBox fx:id="cmbBoxIntakeType" layoutX="99.0" layoutY="144.0" prefHeight="26.0" prefWidth="161.0" promptText="Mug Visit" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -427,18 +427,18 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <DatePicker layoutX="274.0" layoutY="176.0" prefHeight="25.0" prefWidth="110.0" />
-            <Label alignment="CENTER" layoutX="275.0" layoutY="206.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="F" textAlignment="CENTER">
+            <DatePicker fx:id="dpArrivalDate" layoutX="274.0" layoutY="176.0" prefHeight="25.0" prefWidth="110.0" />
+            <Label fx:id="lblGender" alignment="CENTER" layoutX="275.0" layoutY="206.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="F" textAlignment="CENTER">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label alignment="CENTER" layoutX="275.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="28">
+            <Label fx:id="lblAge" alignment="CENTER" layoutX="275.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="28">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
             </Label>
-            <Label layoutX="477.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="O+">
+            <Label fx:id="lblBloodType" layoutX="477.0" layoutY="145.0" prefHeight="25.0" prefWidth="51.0" style="-fx-border-color: gray;" text="O+">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -448,7 +448,7 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <Slider layoutX="475.0" layoutY="207.0" />
+            <Slider fx:id="urgencySlider" layoutX="475.0" layoutY="207.0" />
             <Label layoutX="479.0" layoutY="219.0" prefHeight="27.0" prefWidth="13.0" text="0">
                <font>
                   <Font size="10.0" />
@@ -484,19 +484,19 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <CheckBox layoutX="477.0" layoutY="179.0" mnemonicParsing="false" />
+            <CheckBox fx:id="chkTetanus" layoutX="477.0" layoutY="179.0" mnemonicParsing="false" />
             <Label layoutX="630.0" layoutY="142.0" prefHeight="27.0" prefWidth="110.0" text="Discipline">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="145.0" prefWidth="150.0" promptText="Cardio" />
+            <ComboBox fx:id="cmbBoxCardio" layoutX="742.0" layoutY="145.0" prefWidth="150.0" promptText="Cardio" />
             <Label layoutX="630.0" layoutY="174.0" prefHeight="27.0" prefWidth="121.0" text="Reffering Doctor">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="176.0" prefWidth="150.0" promptText="Dr. Steeve Rickson" />
+            <ComboBox fx:id="cmbBoxRefDoctor" layoutX="742.0" layoutY="176.0" prefWidth="150.0" promptText="Dr. Steeve Rickson" />
             <Label layoutX="632.0" layoutY="206.0" prefHeight="27.0" prefWidth="79.0" text="Pain Scale">
                <font>
                   <Font size="14.0" />
@@ -507,25 +507,25 @@
                   <Font size="10.0" />
                </font>
             </Label>
-            <ComboBox layoutX="742.0" layoutY="209.0" prefHeight="25.0" prefWidth="73.0" promptText="Fair" />
+            <ComboBox fx:id="cmbBoxPainScale" layoutX="742.0" layoutY="209.0" prefHeight="25.0" prefWidth="73.0" promptText="Fair" />
             <Label layoutX="920.0" layoutY="176.0" prefHeight="27.0" prefWidth="73.0" text="Ward">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" promptText="Cardiology" />
+            <ComboBox fx:id="cmbBoxWard" layoutX="993.0" layoutY="176.0" prefHeight="25.0" prefWidth="152.0" promptText="Cardiology" />
             <Label layoutX="920.0" layoutY="208.0" prefHeight="27.0" prefWidth="60.0" text="Bed">
                <font>
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="993.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" promptText="A1022" />
+            <ComboBox fx:id="cmbBoxBed" layoutX="993.0" layoutY="209.0" prefHeight="25.0" prefWidth="152.0" promptText="A1022" />
             <Label alignment="CENTER" layoutX="693.0" layoutY="12.0" prefHeight="17.0" prefWidth="110.0" text="VISIT MAP">
                <font>
                   <Font size="18.0" />
                </font>
             </Label>
-            <ToggleButton layoutX="477.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: white;" text="R">
+            <ToggleButton fx:id="btnVisitReg" layoutX="477.0" layoutY="55.0" mnemonicParsing="false" onAction="#onBtnVisitReg" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: white;" text="R">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -541,7 +541,7 @@
                </font>
             </ToggleButton>
             <Label layoutX="479.0" layoutY="87.0" text="Registered" />
-            <ToggleButton layoutX="567.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #f0b041;" text="T">
+            <ToggleButton fx:id="btnVisitTriage" layoutX="567.0" layoutY="55.0" mnemonicParsing="false" onAction="#onBtnVisitTriage" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #f0b041;" text="T">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -557,7 +557,7 @@
                </font>
             </ToggleButton>
             <Label alignment="CENTER" layoutX="581.0" layoutY="87.0" text="Triage" />
-            <ToggleButton layoutX="655.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="BT">
+            <ToggleButton fx:id="btnVisitTreated" layoutX="655.0" layoutY="55.0" mnemonicParsing="false" onAction="#onBtnVisitTreated" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: yellow;" text="BT">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -574,7 +574,7 @@
             </ToggleButton>
             <Label alignment="CENTER" layoutX="649.0" layoutY="87.0" text="Being Treated" textAlignment="CENTER" />
             <Label alignment="CENTER" layoutX="748.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Medical Treatment" textAlignment="CENTER" wrapText="true" />
-            <ToggleButton layoutX="839.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #8dc576;" text="NT" textFill="WHITE">
+            <ToggleButton fx:id="btnVisitNurseTreatment" layoutX="839.0" layoutY="55.0" mnemonicParsing="false" onAction="#onBtnVisitNurseTreatment" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #8dc576;" text="NT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -583,7 +583,7 @@
                </font>
             </ToggleButton>
             <Label alignment="CENTER" layoutX="840.0" layoutY="87.0" prefHeight="34.0" prefWidth="59.0" text="Nursing Treament" textAlignment="CENTER" wrapText="true" />
-            <ToggleButton layoutX="926.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: RED;" text="OUT" textFill="WHITE">
+            <ToggleButton fx:id="btnVisitMarkOut" layoutX="926.0" layoutY="55.0" mnemonicParsing="false" onAction="#onBtnVisitMarkOut" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: RED;" text="OUT" textFill="WHITE">
                <font>
                   <Font name="System Bold" size="12.0" />
                </font>
@@ -597,9 +597,9 @@
                   <Font size="14.0" />
                </font>
             </Label>
-            <ComboBox layoutX="994.0" layoutY="145.0" prefHeight="25.0" prefWidth="150.0" promptText="Wheel Chair" />
-            <TextField layoutX="173.0" layoutY="11.0" prefHeight="26.0" prefWidth="110.0" />
-            <ToggleButton layoutX="748.0" layoutY="55.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #24b5d8;" text="MT" textFill="WHITE">
+            <ComboBox fx:id="cmbBoxMobility" layoutX="994.0" layoutY="145.0" prefHeight="25.0" prefWidth="150.0" promptText="Wheel Chair" />
+            <TextField fx:id="patCodeText" layoutX="173.0" layoutY="11.0" onAction="#onPatCodeSearch" prefHeight="26.0" prefWidth="110.0" />
+            <ToggleButton fx:id="btnVisitMedicalTreatment" layoutX="748.0" layoutY="55.0" mnemonicParsing="false" onAction="#onBtnVisitMedicalTreatment" prefHeight="28.0" prefWidth="60.0" style="-fx-background-color: #24b5d8;" text="MT" textFill="WHITE">
                <cursor>
                   <Cursor fx:constant="HAND" />
                </cursor>
@@ -614,8 +614,8 @@
                   <Font name="System Bold" size="12.0" />
                </font>
             </ToggleButton>
-            <Button layoutX="1046.0" layoutY="11.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Save" />
-            <Button layoutX="1046.0" layoutY="41.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
+            <Button fx:id="save" layoutX="1046.0" layoutY="11.0" mnemonicParsing="false" onAction="#onSave" prefHeight="26.0" prefWidth="98.0" text="Save" />
+            <Button fx:id="cancel" layoutX="1046.0" layoutY="41.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
          </children>
       </Pane>
    </children>
