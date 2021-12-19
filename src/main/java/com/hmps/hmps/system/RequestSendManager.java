@@ -14,6 +14,23 @@ import java.util.Date;
  */
 public class RequestSendManager {
 
+    private static volatile RequestSendManager instance;
+
+    private RequestSendManager() {
+    }
+
+    public static RequestSendManager getInstance() {
+        if (instance == null) {
+            synchronized (RequestSendManager.class) {
+                if (instance == null) {
+                    instance = new RequestSendManager();
+                }
+            }
+        }
+        return instance;
+    }
+
+
     public static void main(String[] args) throws IOException {
         new RequestSendManager().send();
     }
