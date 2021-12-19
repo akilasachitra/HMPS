@@ -17,7 +17,7 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.Pane?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="688.0" minWidth="1172.0" prefHeight="501.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="688.0" minWidth="1172.0" prefHeight="501.0" prefWidth="677.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.hmps.hmps.general.PatientDetail">
    <children>
       <Pane layoutX="3.0" layoutY="3.0" prefHeight="682.0" prefWidth="1166.0">
          <children>
@@ -40,65 +40,65 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="171.0" prefWidth="684.0">
                            <children>
-                              <Button layoutX="364.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="New" />
-                              <Button layoutX="466.0" layoutY="238.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="149.0" text="Save" />
-                              <Button layoutX="620.0" layoutY="237.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
+                              <Button fx:id="newData" layoutX="364.0" layoutY="238.0" mnemonicParsing="false" onAction="#onNew" prefHeight="26.0" prefWidth="98.0" text="New" />
+                              <Button fx:id="save" layoutX="466.0" layoutY="238.0" mnemonicParsing="false" onAction="#onSave" prefHeight="26.0" prefWidth="149.0" text="Save" />
+                              <Button fx:id="cancel" layoutX="620.0" layoutY="237.0" mnemonicParsing="false" onAction="#onCancel" prefHeight="26.0" prefWidth="98.0" text="Cancel" />
                               <Group layoutX="15.0" layoutY="16.0">
                                  <children>
                                     <Label layoutX="1.0" layoutY="6.0" prefHeight="18.0" prefWidth="52.0" text="Code" />
                                     <Label layoutY="97.0" prefHeight="18.0" prefWidth="92.0" text="First Name" />
                                     <Label layoutY="128.0" prefHeight="18.0" prefWidth="92.0" text="Last Name" />
                                     <Label layoutY="158.0" prefHeight="18.0" prefWidth="92.0" text="Maiden Name" />
-                                    <TextField layoutX="90.0" layoutY="92.0" prefHeight="26.0" prefWidth="220.0" />
-                                    <TextField layoutX="90.0" layoutY="123.0" prefHeight="26.0" prefWidth="220.0" />
-                                    <TextField layoutX="90.0" prefHeight="26.0" prefWidth="150.0" />
-                                    <TextField layoutX="90.0" layoutY="155.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textFName" layoutX="90.0" layoutY="92.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textLName" layoutX="90.0" layoutY="123.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textCode" layoutX="90.0" prefHeight="26.0" prefWidth="150.0" />
+                                    <TextField fx:id="textMaidenName" layoutX="90.0" layoutY="155.0" prefHeight="26.0" prefWidth="220.0" />
                                     <Label layoutX="1.0" layoutY="36.0" prefHeight="18.0" prefWidth="58.0" text="HIS Code" />
-                                    <TextField layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="149.0" />
+                                    <TextField fx:id="textHISCode" layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="149.0" />
                                     <Label layoutY="67.0" prefHeight="18.0" prefWidth="89.0" text="Social Security" />
-                                    <TextField layoutX="90.0" layoutY="61.0" prefHeight="26.0" prefWidth="152.0" />
+                                    <TextField fx:id="textSocialSecurityCode" layoutX="90.0" layoutY="61.0" prefHeight="26.0" prefWidth="152.0" />
                                     <Label layoutY="189.0" prefHeight="18.0" prefWidth="92.0" text="Surname / Extra" />
-                                    <TextField layoutX="90.0" layoutY="186.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textSurName" layoutX="90.0" layoutY="186.0" prefHeight="26.0" prefWidth="220.0" />
                                  </children>
                               </Group>
                               <Label layoutX="371.0" layoutY="139.0" prefHeight="18.0" prefWidth="92.0" text="Country" />
                               <Label layoutX="371.0" layoutY="171.0" prefHeight="18.0" prefWidth="92.0" text="Nationality" />
-                              <ComboBox layoutX="463.0" layoutY="139.0" prefWidth="150.0" />
-                              <ComboBox layoutX="463.0" layoutY="171.0" prefWidth="150.0" />
+                              <ComboBox fx:id="cmbBoxCountry" layoutX="463.0" layoutY="139.0" prefWidth="150.0" />
+                              <ComboBox fx:id="cmbBoxNationality" layoutX="463.0" layoutY="171.0" prefWidth="150.0" />
                               <Label layoutX="371.0" layoutY="108.0" prefHeight="18.0" prefWidth="92.0" text="Marital status" />
-                              <ComboBox layoutX="462.0" layoutY="108.0" prefWidth="150.0" />
+                              <ComboBox fx:id="cmbBoxMaritalStatus" layoutX="462.0" layoutY="108.0" prefWidth="150.0" />
                               <Label layoutX="371.0" layoutY="51.0" prefHeight="18.0" prefWidth="92.0" text="Gender" />
-                              <ComboBox layoutX="461.0" layoutY="46.0" prefWidth="150.0" />
-                              <DatePicker layoutX="461.0" layoutY="15.0" prefHeight="26.0" prefWidth="154.0" />
+                              <ComboBox fx:id="cmbBoxGender" layoutX="461.0" layoutY="46.0" prefWidth="150.0" />
+                              <DatePicker fx:id="dpBirthDate" layoutX="461.0" layoutY="15.0" prefHeight="26.0" prefWidth="154.0" />
                               <Label layoutX="369.0" layoutY="19.0" text="Birthdate" />
                               <Label layoutX="371.0" layoutY="205.0" prefHeight="18.0" prefWidth="92.0" text="Language" />
-                              <ComboBox layoutX="463.0" layoutY="202.0" prefHeight="26.0" prefWidth="151.0" />
+                              <ComboBox fx:id="cmbBoxLanguage" layoutX="463.0" layoutY="202.0" prefHeight="26.0" prefWidth="151.0" />
                               <ImageView fitHeight="121.0" fitWidth="123.0" layoutX="996.0" layoutY="40.0" pickOnBounds="true" preserveRatio="true">
                                  <image>
                                     <Image url="@CSS/Images/user.png" />
                                  </image>
                               </ImageView>
-                              <Button layoutX="1030.0" layoutY="173.0" mnemonicParsing="false" text="Upload" />
+                              <Button fx:id="btnUpload" layoutX="1030.0" layoutY="173.0" mnemonicParsing="false" onAction="#onUpload" text="Upload" />
                               <Group layoutX="643.0" layoutY="16.0">
                                  <children>
                                     <Label layoutX="1.0" layoutY="6.0" prefHeight="18.0" prefWidth="70.0" text="Address 1" />
                                     <Label layoutY="97.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 1" />
                                     <Label layoutY="128.0" prefHeight="18.0" prefWidth="92.0" text="Telephone 2" />
                                     <Label layoutY="158.0" prefHeight="18.0" prefWidth="92.0" text="Fax" />
-                                    <TextField layoutX="90.0" layoutY="92.0" prefHeight="26.0" prefWidth="150.0" />
-                                    <TextField layoutX="90.0" layoutY="123.0" prefHeight="26.0" prefWidth="150.0" />
-                                    <TextField layoutX="90.0" prefHeight="26.0" prefWidth="220.0" />
-                                    <TextField layoutX="90.0" layoutY="155.0" prefHeight="26.0" prefWidth="150.0" />
+                                    <TextField fx:id="textTp1" layoutX="90.0" layoutY="92.0" prefHeight="26.0" prefWidth="150.0" />
+                                    <TextField fx:id="textTp2" layoutX="90.0" layoutY="123.0" prefHeight="26.0" prefWidth="150.0" />
+                                    <TextField fx:id="textAddress1" layoutX="90.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textFax" layoutX="90.0" layoutY="155.0" prefHeight="26.0" prefWidth="150.0" />
                                     <Label layoutX="1.0" layoutY="36.0" prefHeight="18.0" prefWidth="58.0" text="Address 2" />
-                                    <TextField layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textAddress2" layoutX="90.0" layoutY="31.0" prefHeight="26.0" prefWidth="220.0" />
                                     <Label layoutY="67.0" prefHeight="18.0" prefWidth="89.0" text="Address 3" />
-                                    <TextField layoutX="90.0" layoutY="61.0" prefHeight="26.0" prefWidth="220.0" />
+                                    <TextField fx:id="textAddress3" layoutX="90.0" layoutY="61.0" prefHeight="26.0" prefWidth="220.0" />
                                     <Label layoutY="189.0" prefHeight="18.0" prefWidth="92.0" text="E-mail " />
-                                    <TextField layoutX="90.0" layoutY="186.0" prefHeight="26.0" prefWidth="150.0" />
+                                    <TextField fx:id="textEmail" layoutX="90.0" layoutY="186.0" prefHeight="26.0" prefWidth="150.0" />
                                  </children>
                               </Group>
                               <Label layoutX="370.0" layoutY="80.0" prefHeight="18.0" prefWidth="92.0" text="Blood Group" />
-                              <ComboBox layoutX="462.0" layoutY="77.0" prefWidth="150.0" />
+                              <ComboBox fx:id="cmbBoxBloodGroup" layoutX="462.0" layoutY="77.0" prefWidth="150.0" />
                            </children>
                         </AnchorPane>
                   </content>
@@ -107,35 +107,35 @@
                   <content>
                     <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="242.0" prefWidth="1147.0">
                            <children>
-                              <Button layoutX="453.0" layoutY="231.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="178.0" text="Search" />
-                              <TextField layoutX="178.0" layoutY="106.0" prefHeight="26.0" prefWidth="169.0" />
-                              <RadioButton layoutX="19.0" layoutY="21.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="121.0" text="Search by Code" />
+                              <Button fx:id="search" layoutX="453.0" layoutY="231.0" mnemonicParsing="false" onAction="#onSearch" prefHeight="26.0" prefWidth="178.0" text="Search" />
+                              <TextField fx:id="textSearchFName" layoutX="178.0" layoutY="106.0" prefHeight="26.0" prefWidth="169.0" />
+                              <RadioButton fx:id="btnSearchByCode" layoutX="19.0" layoutY="21.0" mnemonicParsing="false" onAction="#onBtnSearchByCode" prefHeight="18.0" prefWidth="121.0" text="Search by Code" />
                               <CheckBox layoutX="18.0" layoutY="110.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="143.0" text="Search By First Name" />
                               <CheckBox layoutX="18.0" layoutY="141.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="142.0" text="Search By last Name" />
-                              <TextField layoutX="178.0" layoutY="136.0" prefHeight="26.0" prefWidth="169.0" />
-                              <TextField layoutX="179.0" layoutY="16.0" prefHeight="26.0" prefWidth="85.0" />
+                              <TextField fx:id="textSearchLName" layoutX="178.0" layoutY="136.0" prefHeight="26.0" prefWidth="169.0" />
+                              <TextField fx:id="textSearchCode" layoutX="179.0" layoutY="16.0" prefHeight="26.0" prefWidth="85.0" />
                               <CheckBox layoutX="17.0" layoutY="171.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="155.0" text="Search By Maiden Name" />
-                              <TextField layoutX="178.0" layoutY="166.0" prefHeight="26.0" prefWidth="169.0" />
-                              <RadioButton layoutX="398.0" layoutY="18.0" mnemonicParsing="false" text="Search by Age" />
-                              <TextField layoutX="555.0" layoutY="13.0" prefHeight="26.0" prefWidth="43.0" />
-                              <TextField layoutX="661.0" layoutY="13.0" prefHeight="26.0" prefWidth="42.0" />
+                              <TextField fx:id="textSearchMaidenName" layoutX="178.0" layoutY="166.0" prefHeight="26.0" prefWidth="169.0" />
+                              <RadioButton fx:id="btnSearchByAge" layoutX="398.0" layoutY="18.0" mnemonicParsing="false" text="Search by Age" />
+                              <TextField fx:id="textSearchAgeFrom" layoutX="555.0" layoutY="13.0" prefHeight="26.0" prefWidth="43.0" />
+                              <TextField fx:id="textSearchAgeTo" layoutX="661.0" layoutY="13.0" prefHeight="26.0" prefWidth="42.0" />
                               <Label layoutX="607.0" layoutY="18.0" text="between" />
-                              <CheckBox layoutX="398.0" layoutY="48.0" mnemonicParsing="false" text="Search By Gender" />
-                              <ComboBox layoutX="555.0" layoutY="45.0" prefHeight="26.0" prefWidth="150.0" />
-                              <CheckBox layoutX="398.0" layoutY="79.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Blood group" />
-                              <ComboBox layoutX="555.0" layoutY="76.0" prefHeight="26.0" prefWidth="151.0" />
-                              <RadioButton layoutX="18.0" layoutY="49.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
-                              <TextField layoutX="179.0" layoutY="46.0" prefHeight="26.0" prefWidth="85.0" />
-                              <RadioButton layoutX="18.0" layoutY="77.0" mnemonicParsing="false" text="Search by Social Security" />
-                              <TextField layoutX="179.0" layoutY="76.0" prefHeight="26.0" prefWidth="85.0" />
+                              <CheckBox fx:id="btnSearchByGender" layoutX="398.0" layoutY="48.0" mnemonicParsing="false" text="Search By Gender" />
+                              <ComboBox fx:id="cmbBoxSerchByGender" layoutX="555.0" layoutY="45.0" prefHeight="26.0" prefWidth="150.0" />
+                              <CheckBox fx:id="btnSearchByBloodGroup" layoutX="398.0" layoutY="79.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Blood group" />
+                              <ComboBox fx:id="cmbBoxSerchByBloodGroup" layoutX="555.0" layoutY="76.0" prefHeight="26.0" prefWidth="151.0" />
+                              <RadioButton fx:id="btnSearchByHISCode" layoutX="18.0" layoutY="49.0" mnemonicParsing="false" onAction="#onBtnSearchByHISCode" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
+                              <TextField fx:id="textSearchHISCode" layoutX="179.0" layoutY="46.0" prefHeight="26.0" prefWidth="85.0" />
+                              <RadioButton fx:id="btnSearchBySSCode" layoutX="18.0" layoutY="77.0" mnemonicParsing="false" onAction="#onBtnSearchBySSCode" text="Search by Social Security" />
+                              <TextField fx:id="textSearchSSCode" layoutX="179.0" layoutY="76.0" prefHeight="26.0" prefWidth="85.0" />
                               <CheckBox layoutX="17.0" layoutY="201.0" mnemonicParsing="false" text="Search By Surname" />
-                              <TextField layoutX="178.0" layoutY="197.0" prefHeight="26.0" prefWidth="169.0" />
-                              <CheckBox layoutX="399.0" layoutY="112.0" mnemonicParsing="false" text="Search By Marital status" />
-                              <ComboBox layoutX="555.0" layoutY="108.0" prefHeight="26.0" prefWidth="152.0" />
-                              <CheckBox layoutX="399.0" layoutY="143.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Country" />
-                              <ComboBox layoutX="555.0" layoutY="140.0" prefHeight="26.0" prefWidth="151.0" />
-                              <CheckBox layoutX="399.0" layoutY="176.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Language" />
-                              <ComboBox layoutX="555.0" layoutY="172.0" prefHeight="26.0" prefWidth="151.0" />
+                              <TextField fx:id="textSearchSurName" layoutX="178.0" layoutY="197.0" prefHeight="26.0" prefWidth="169.0" />
+                              <CheckBox fx:id="btnSearchByMaritalStatus" layoutX="399.0" layoutY="112.0" mnemonicParsing="false" text="Search By Marital status" />
+                              <ComboBox fx:id="cmbBoxSerchByMaritalStatus" layoutX="555.0" layoutY="108.0" prefHeight="26.0" prefWidth="152.0" />
+                              <CheckBox fx:id="btnSearchByCountry" layoutX="399.0" layoutY="143.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Country" />
+                              <ComboBox fx:id="cmbBoxSerchByCountry" layoutX="555.0" layoutY="140.0" prefHeight="26.0" prefWidth="151.0" />
+                              <CheckBox fx:id="btnSearchByLanguage" layoutX="399.0" layoutY="176.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Language" />
+                              <ComboBox fx:id="cmbBoxSerchByLanguage" layoutX="555.0" layoutY="172.0" prefHeight="26.0" prefWidth="151.0" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
