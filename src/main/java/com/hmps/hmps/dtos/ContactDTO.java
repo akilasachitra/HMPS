@@ -1,6 +1,8 @@
 package com.hmps.hmps.dtos;
 
-public class ContactDTO {
+import java.io.Serializable;
+
+public class ContactDTO implements Serializable {
 
     private long id;
     private String address1;

@@ -36,11 +36,11 @@ public class PatientDTO extends PersonDTO {
         this.ssCode = ssCode;
     }
 
-    public Date getbDate() {
+    public Date getBirthDate() {
         return bDate;
     }
 
-    public void setbDate(Date bDate) {
+    public void setBirthDate(Date bDate) {
         this.bDate = bDate;
     }
 

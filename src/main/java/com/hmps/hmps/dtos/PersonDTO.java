@@ -1,9 +1,11 @@
 package com.hmps.hmps.dtos;
 
+import java.io.Serializable;
+
 /**
  * Base calls for both patient and medical professional which both shares common attributes
  */
-public abstract class PersonDTO {
+public abstract class PersonDTO implements Serializable {
 
     private long Id;
     private String code;
@@ -34,7 +36,7 @@ public abstract class PersonDTO {
         return fName;
     }
 
-    public void setfFirstame(String fName) {
+    public void setFirstName(String fName) {
         this.fName = fName;
     }
 
