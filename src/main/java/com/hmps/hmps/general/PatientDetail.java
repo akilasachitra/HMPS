@@ -56,7 +56,7 @@ public class PatientDetail {
     @javafx.fxml.FXML
     private CheckBox btnSearchByLanguage;
     @javafx.fxml.FXML
-    private ComboBox cmbBoxSerchByGender;
+    private ComboBox cmbBoxSearchByGender;
     @javafx.fxml.FXML
     private CheckBox btnSearchByGender;
     @javafx.fxml.FXML
@@ -80,7 +80,7 @@ public class PatientDetail {
     @javafx.fxml.FXML
     private RadioButton btnSearchByCode;
     @javafx.fxml.FXML
-    private ComboBox cmbBoxSerchByBloodGroup;
+    private ComboBox cmbBoxSearchByBloodGroup;
     @javafx.fxml.FXML
     private TextField textSearchHISCode;
     @javafx.fxml.FXML
@@ -90,7 +90,7 @@ public class PatientDetail {
     @javafx.fxml.FXML
     private CheckBox btnSearchByBloodGroup;
     @javafx.fxml.FXML
-    private ComboBox cmbBoxSerchByCountry;
+    private ComboBox cmbBoxSearchByCountry;
     @javafx.fxml.FXML
     private TextField textSearchAgeFrom;
     @javafx.fxml.FXML
@@ -100,9 +100,9 @@ public class PatientDetail {
     @javafx.fxml.FXML
     private CheckBox btnSearchByCountry;
     @javafx.fxml.FXML
-    private ComboBox cmbBoxSerchByMaritalStatus;
+    private ComboBox cmbBoxSearchByMaritalStatus;
     @javafx.fxml.FXML
-    private ComboBox cmbBoxSerchByLanguage;
+    private ComboBox cmbBoxSearchByLanguage;
 
     @javafx.fxml.FXML
     public void onSave(ActionEvent actionEvent) {

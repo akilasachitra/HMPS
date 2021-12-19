@@ -121,9 +121,9 @@
                               <TextField fx:id="textSearchAgeTo" layoutX="661.0" layoutY="13.0" prefHeight="26.0" prefWidth="42.0" />
                               <Label layoutX="607.0" layoutY="18.0" text="between" />
                               <CheckBox fx:id="btnSearchByGender" layoutX="398.0" layoutY="48.0" mnemonicParsing="false" text="Search By Gender" />
-                              <ComboBox fx:id="cmbBoxSerchByGender" layoutX="555.0" layoutY="45.0" prefHeight="26.0" prefWidth="150.0" />
+                              <ComboBox fx:id="cmbBoxSearchByGender" layoutX="555.0" layoutY="45.0" prefHeight="26.0" prefWidth="150.0" />
                               <CheckBox fx:id="btnSearchByBloodGroup" layoutX="398.0" layoutY="79.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Blood group" />
-                              <ComboBox fx:id="cmbBoxSerchByBloodGroup" layoutX="555.0" layoutY="76.0" prefHeight="26.0" prefWidth="151.0" />
+                              <ComboBox fx:id="cmbBoxSearchByBloodGroup" layoutX="555.0" layoutY="76.0" prefHeight="26.0" prefWidth="151.0" />
                               <RadioButton fx:id="btnSearchByHISCode" layoutX="18.0" layoutY="49.0" mnemonicParsing="false" onAction="#onBtnSearchByHISCode" prefHeight="18.0" prefWidth="148.0" text="Search by HIS Code" />
                               <TextField fx:id="textSearchHISCode" layoutX="179.0" layoutY="46.0" prefHeight="26.0" prefWidth="85.0" />
                               <RadioButton fx:id="btnSearchBySSCode" layoutX="18.0" layoutY="77.0" mnemonicParsing="false" onAction="#onBtnSearchBySSCode" text="Search by Social Security" />
@@ -131,11 +131,11 @@
                               <CheckBox layoutX="17.0" layoutY="201.0" mnemonicParsing="false" text="Search By Surname" />
                               <TextField fx:id="textSearchSurName" layoutX="178.0" layoutY="197.0" prefHeight="26.0" prefWidth="169.0" />
                               <CheckBox fx:id="btnSearchByMaritalStatus" layoutX="399.0" layoutY="112.0" mnemonicParsing="false" text="Search By Marital status" />
-                              <ComboBox fx:id="cmbBoxSerchByMaritalStatus" layoutX="555.0" layoutY="108.0" prefHeight="26.0" prefWidth="152.0" />
+                              <ComboBox fx:id="cmbBoxSearchByMaritalStatus" layoutX="555.0" layoutY="108.0" prefHeight="26.0" prefWidth="152.0" />
                               <CheckBox fx:id="btnSearchByCountry" layoutX="399.0" layoutY="143.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Country" />
-                              <ComboBox fx:id="cmbBoxSerchByCountry" layoutX="555.0" layoutY="140.0" prefHeight="26.0" prefWidth="151.0" />
+                              <ComboBox fx:id="cmbBoxSearchByCountry" layoutX="555.0" layoutY="140.0" prefHeight="26.0" prefWidth="151.0" />
                               <CheckBox fx:id="btnSearchByLanguage" layoutX="399.0" layoutY="176.0" mnemonicParsing="false" prefHeight="18.0" prefWidth="147.0" text="Search By Language" />
-                              <ComboBox fx:id="cmbBoxSerchByLanguage" layoutX="555.0" layoutY="172.0" prefHeight="26.0" prefWidth="151.0" />
+                              <ComboBox fx:id="cmbBoxSearchByLanguage" layoutX="555.0" layoutY="172.0" prefHeight="26.0" prefWidth="151.0" />
                            </children></AnchorPane>
                   </content>
                 </Tab>
