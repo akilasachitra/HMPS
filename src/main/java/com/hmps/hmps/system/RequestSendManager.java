@@ -30,7 +30,6 @@ public class RequestSendManager {
         return instance;
     }
 
-
     public static void main(String[] args) throws IOException {
         new RequestSendManager().send();
     }
