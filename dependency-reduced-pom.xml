@@ -40,7 +40,7 @@
             <configuration>
               <transformers>
                 <transformer>
-                  <mainClass>com.hmps.hmps.general.Start</mainClass>
+                  <mainClass>com.hmps.hmps/com.hmps.hmps.general.Start</mainClass>
                 </transformer>
               </transformers>
             </configuration>
@@ -49,24 +49,6 @@
       </plugin>
     </plugins>
   </build>
-  <dependencies>
-    <dependency>
-      <groupId>org.testng</groupId>
-      <artifactId>testng</artifactId>
-      <version>7.4.0</version>
-      <scope>test</scope>
-      <exclusions>
-        <exclusion>
-          <artifactId>jcommander</artifactId>
-          <groupId>com.beust</groupId>
-        </exclusion>
-        <exclusion>
-          <artifactId>jquery</artifactId>
-          <groupId>org.webjars</groupId>
-        </exclusion>
-      </exclusions>
-    </dependency>
-  </dependencies>
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
