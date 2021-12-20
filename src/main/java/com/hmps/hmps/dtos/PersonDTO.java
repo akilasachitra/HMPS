@@ -7,21 +7,21 @@ import java.io.Serializable;
  */
 public abstract class PersonDTO implements Serializable {
 
-    private long Id;
-    private String code;
-    private String fName; // First name
-    private String lName; // Last name
-    private String mName; // Maiden name
-    private String sName; // Sur name
-    private ContactDTO contact;
-    private long personImageID;
+    public long id;
+    public String code;
+    public String firstName; // First name
+    public String lastName; // Last name
+    public String maidenName; // Maiden name
+    public String surName; // Sur name
+    public ContactDTO contact;
+    public long personImageID;
 
     public long getId() {
-        return Id;
+        return id;
     }
 
     public void setId(long id) {
-        Id = id;
+        this.id = id;
     }
 
     public String getCode() {
@@ -33,35 +33,35 @@ public abstract class PersonDTO implements Serializable {
     }
 
     public String getFirstName() {
-        return fName;
+        return firstName;
     }
 
     public void setFirstName(String fName) {
-        this.fName = fName;
+        this.firstName = fName;
     }
 
     public String getLastName() {
-        return lName;
+        return lastName;
     }
 
     public void setLastName(String lName) {
-        this.lName = lName;
+        this.lastName = lName;
     }
 
     public String getMaidenName() {
-        return mName;
+        return maidenName;
     }
 
     public void setMaidenName(String mName) {
-        this.mName = mName;
+        this.maidenName = mName;
     }
 
     public String getSurName() {
-        return sName;
+        return surName;
     }
 
     public void setSurName(String sName) {
-        this.sName = sName;
+        this.surName = sName;
     }
 
     public ContactDTO getContact() {

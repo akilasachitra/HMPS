@@ -2,23 +2,26 @@ package com.hmps.hmps.dtos;
 
 
 import com.hmps.hmps.hardcodedtypes.*;
+import javafx.beans.property.SimpleIntegerProperty;
+import javafx.beans.property.SimpleStringProperty;
 
 import java.util.Date;
+import java.util.Random;
 
 /**
  * Patient specific attributes goes here
  */
 public class PatientDTO extends PersonDTO {
 
-    private String hisCode; // Harmonized identification System code
-    private String ssCode; // Social Security code
-    private Date bDate;// Birthdate
-    private Gender gender;
-    private BloodGroup bloodGroup;
-    private MaritalStatus maritalStatus;
-    private Country country;
-    private int nationality;
-    private Language language;
+    public String hisCode; // Harmonized identification System code
+    public String ssCode; // Social Security code
+    public Date bDate;// Birthdate
+    public Gender gender;
+    public BloodGroup bloodGroup;
+    public MaritalStatus maritalStatus;
+    public Country country;
+    public int nationality;
+    public Language language;
 
     public String getHisCode() {
         return hisCode;
@@ -91,4 +94,39 @@ public class PatientDTO extends PersonDTO {
     public void setLanguage(Language language) {
         this.language = language;
     }
+
+    public SimpleIntegerProperty getAgeProperty() {
+        return new SimpleIntegerProperty(new Random().nextInt(55));
+    }
+
+    public SimpleStringProperty getAddressProperty() {
+        SimpleStringProperty property = new SimpleStringProperty();
+
+        ContactDTO contact = getContact();
+        if (contact != null) {
+            property.set(contact.getAddress1());
+        }
+        return property;
+    }
+
+    public SimpleStringProperty getEmailProperty() {
+        SimpleStringProperty property = new SimpleStringProperty();
+
+        ContactDTO contact = getContact();
+        if (contact != null) {
+            property.set(contact.getEmail());
+        }
+        return property;
+    }
+
+    public SimpleStringProperty getContactNumberProperty() {
+        SimpleStringProperty property = new SimpleStringProperty();
+        ContactDTO contact = getContact();
+        if (contact != null) {
+            property.set(contact.getTelephone1());
+        }
+        return property;
+    }
+
+
 }

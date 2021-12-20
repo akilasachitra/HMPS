@@ -21,17 +21,17 @@
    <children>
       <Pane layoutX="3.0" layoutY="3.0" prefHeight="682.0" prefWidth="1166.0">
          <children>
-            <TableView layoutX="5.0" layoutY="326.0" prefHeight="341.0" prefWidth="1157.0">
+            <TableView fx:id="tblPatientData" layoutX="5.0" layoutY="326.0" onMouseClicked="#onTablePatientDataClick" prefHeight="341.0" prefWidth="1157.0">
               <columns>
-                <TableColumn prefWidth="50.39996528625488" text="ID" />
-                <TableColumn prefWidth="151.99999618530273" text="First Name" />
-                  <TableColumn minWidth="0.0" prefWidth="151.2000274658203" text="Last Name" />
-                  <TableColumn prefWidth="60.7999267578125" text="Age" />
-                  <TableColumn prefWidth="95.99993896484375" text="Sex" />
-                  <TableColumn prefWidth="85.60003662109375" text="Blood Group" />
-                  <TableColumn prefWidth="363.20001220703125" text="Address" />
-                  <TableColumn prefWidth="101.60009765625" text="Last visited Date" />
-                  <TableColumn prefWidth="90.39990234375" text="Contact No" />
+                <TableColumn fx:id="idColumn" prefWidth="50.39996528625488" text="ID" />
+                <TableColumn fx:id="fNameColumn" prefWidth="151.99999618530273" text="First Name" />
+                  <TableColumn fx:id="lNameColumn" minWidth="0.0" prefWidth="151.2000274658203" text="Last Name" />
+                  <TableColumn fx:id="ageColumn" prefWidth="60.7999267578125" text="Age" />
+                  <TableColumn fx:id="sexColumn" prefWidth="95.99993896484375" text="Gender" />
+                  <TableColumn fx:id="bGroupColumn" prefWidth="85.60003662109375" text="Blood Group" />
+                  <TableColumn fx:id="addressColumn" prefWidth="274.0" text="Address" />
+                  <TableColumn fx:id="emailColumn" prefWidth="192.0" text="E-mail " />
+                  <TableColumn fx:id="contactColumn" prefWidth="90.39990234375" text="Contact No" />
               </columns>
             </TableView>
             <TabPane layoutX="6.0" layoutY="14.0" prefHeight="308.0" prefWidth="1147.0" tabClosingPolicy="UNAVAILABLE">
