@@ -8,8 +8,7 @@ import java.io.IOException;
 import java.util.Date;
 
 public class RequestSendManagerTest {
-
-    //@Test
+   // @Test
     public void sendTest() throws IOException {
 
         PatientDTO dto = new PatientDTO();
@@ -28,9 +27,6 @@ public class RequestSendManagerTest {
         dto.setCountry(Country.UNITED_KINGDOM);
         dto.setNationality(10);
         dto.setLanguage(Language.ENGLISH);
-
         RequestSendManager.getInstance().send(dto);
-
     }
-
 }
